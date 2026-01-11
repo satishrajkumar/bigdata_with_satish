@@ -18,11 +18,7 @@ I’m a Results-driven Data Engineer with over 5 years of experience designing a
 ---
 
 ## 🎓 Education
-- B.E., BMS College of Engineering (2014–2018)
-
----
-## 🏆 Certifications
-- **SnowPro Core Certification** – Snowflake  
+- B.E., PDA College of Engineering (2014–2018)
 
 ---
 
@@ -56,81 +52,79 @@ The Audience platform was built as a single source of truth data lake for all bu
 
 ---
 
-## **Ernst & Young, Bangalore, India**  
+## **Happiest Minds Technologies Ltd , Bangalore, India**  
 **Data Engineer (2022-2024)**
 
 ### Projects
-### 1.🧮 IFRS17 Compliance Platform – Financial Services
-**Tech Stack:** AWS Glue, PySpark, Athena, RDS, Airflow  
-
-- Built pipelines for IFRS17 regulatory compliance  
-- Used Athena + RDS for efficient querying and storage  
-- Automated workflows with Apache Airflow
-- Established robust data validation frameworks 
-
-
-### 2.Customer & Order Analytics Platform on GCP
-**Tech Stack:** GCP, Cloud Composer (Apache Airflow), Python, GCS, BigQuery, SQL, Looker Studio
-
-### Project Description
-Built a cloud-native analytics platform to serve as a centralized source of truth for customer and order data.  
-
-### Key Achievements
-- Designed end-to-end ETL pipelines for daily customer & order data  
-- Orchestrated workflows via Cloud Composer 
-- Cleaned and transformed data in Python, standardized columns, handled missing values  
-- Loaded datasets into BigQuery, optimized for analytics  
-- Created analytical SQL transformations for reporting  
-- Ensured fault-tolerant execution with error handling & retries 
-- Exposed datasets for Looker Studio dashboards
-
-### 3.📊 Metadata Dashboard Automation – BI4BI
-**Tech Stack:** Power BI, SQL Server, Python, REST APIs  
-
-- Automated metadata ingestion using Python + REST APIs 
-- Delivered Power BI dashboards for key metrics  
-- Enabled actionable insights through Pandas and SQL transformations  
+	
+	DataOps & MLOps Platform – Transport Sector 
+	• Built and operated DataOps frameworks across Dev, UAT, Pre-Prod, and Prod, enabling data quality, monitoring, and 
+	reliable ML deployments for multiple transport-sector applications. 
+	• Developed and automated ETL pipelines using AWS Lambda → AWS Glue (PySpark) → Amazon Redshift/S3, with 
+	configurable data quality frameworks and proactive production issue resolution, ensuring stable, SLA-compliant pipelines. 
+	• Owned end-to-end ETL delivery for Parts Back Order Analysis, ingesting dealership and vendor data via S3/Athena, 
+	transforming through Glue, and serving curated datasets from Redshift to support inventory planning and shortage analysis 
+	across all environments. 
+	• Supported ML model deployments in collaboration with data scientists by operationalizing models through AWS services, 
+	enabling smooth productionization, monitoring, and post-deployment support. 
+	• Administered Amazon Redshift and built AWS cloud billing dashboards in Power BI using CloudWatch metrics and alerts, 
+	improving cost visibility, usage tracking, and operational control. 
+	 
+	Parts Back Order Analysis (Transport Sector (MSIL)) 
+	• Built a data analytics platform to analyze dealership Parts Back Orders, enabling the PAP team to identify root causes of 
+	inventory shortages and support proactive inventory planning. 
+	• Designed and implemented ETL pipelines using Amazon S3 → AWS Glue (PySpark) → Amazon Redshift, with Amazon 
+	Athena for ad-hoc analysis and validation, delivering analytics-ready datasets for reporting. 
+	• Developed backend APIs using AWS API Gateway → AWS Lambda → Amazon Redshift, exposing curated data to 
+	dashboards and applications, enabling faster insights and data-driven decision-making. 
+	• Tech Stack & Tools used: 
+	• S3, Glue, Lambda, Redshift, Athena, API Gateway, Step Functions, Secrets Manager, CloudWatch,PySpark, SQL, ETL 
+	Pipelines, Data Warehousing, RDS ,GitHub, Jira 
 
 ---
 
-## **Subtle Solutions, Pune, India**  
-**Role:** Data Engineer (2019-2022)
+## **Webtouch Software Development Pvt Ltd**  
+**Role:** Data Engineer (2019-2021)
 
 ### Projects
-### 1.E-Commerce Analytics & Data Platform on AWS
-**Tech Stack:** AWS Glue, PySpark, Python, S3, RDS, Lambda, Athena, EC2, SQL  
-
-**Project Description**  
-Developed a scalable AWS data platform to support analytics, reporting, and operations.  
-
-**Key Achievements**
-- Built scalable ETL pipelines using AWS Glue and PySpark  
-- Ingested data from multiple commerce systems into RDS & analytics stores
-- Implemented data quality checks & validation rules*
-- Optimized PySpark jobs and SQL queries  
-- Automated tasks using AWS Lambda, validated via Amazon Athena  
-- Monitored production pipelines and fixed issues with minimal downtime  
-- Delivered analytics-ready datasets for downstream reporting  
+	
+	Sentiment Analysis Using Automated ML | Banking Sector 
+	• Built a sentiment analysis pipeline to process customer text data (reviews, posts, feedback) using S3 → AWS Glue (ETL) → 
+	ML-ready datasets, enabling customer segmentation, service prioritization, and product improvement insights. 
+	• Performed data cleaning, filtering, and transformations to deliver high-quality datasets for automated machine learning 
+	models, improving model reliability and analytical accuracy. 
+	• Developed and monitored AWS Lambda–triggered Glue jobs, provided production support, and supported ML model 
+	deployment using AWS services, ensuring stable and scalable sentiment analytics pipelines. 
+	 
+	Enhancing E-Commerce Data Platform | Health Sector 
+	• Built event-driven ETL pipelines (S3 → Lambda → AWS Glue → Snowflake) to process product, inventory, pricing, and 
+	order feeds, enabling near real-time ingestion and scalable analytics. 
+	• Implemented data validation, quality checks, and business rules, loading curated datasets into Snowflake schemas and 
+	routing invalid/dependent records to reprocessing layers, improving data reliability. 
+	• Developed Glue extract jobs (Snowflake → S3 CSV) to deliver SAP-ready datasets and sales analytics (top products, 
+	revenue trends), supporting data-driven business decisions and frontend reporting 
+	•  Tech Stack & Tools used: 
+	• Python, PySpark, SQL, AWS S3, Lambda, Glue, EMR, EC2, Step Functions, CloudWatch, Snowflake.
 
 ---
 
 ## 🌐 GitHub Pages Portfolio Website
 <a id="portfolio"></a>
 
-🔗 [https://mallinathnpatil1996.github.io](https://mallinathnpatil1996.github.io) 
+🔗 [https://satishrajkumar.github.io](https://satishrajkumar.github.io) 
 
 ---
 
 ## 📫 Contact Me
 <a id="contact"></a>
-- 📧 **Email**: [mallinathnpatil1996@gmail.com](mailto:mallinathnpatil1996@gmail.com)  
-- 🔗 **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
+- 📧 **Email**: [satishrajkumar001@gmail.com](mailto:satishrajkumar001@gmail.com)  
+- 🔗 **LinkedIn**: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/satish-r-1458b1311/)
 
 ---
 
 ## 🏅 Achievements
 
-- Certificate of Excellence – Publicis Sapient  
+- Teamwork,Excellence  – Happiest Minds Technologies ltd
 - Successfully migrated 17M+ records with <1% error  
 - Reduced ETL runtime by 30% across multiple pipelines  
 
