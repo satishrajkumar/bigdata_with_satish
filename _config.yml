@@ -1,0 +1,24 @@
+title: Mallinath Patil
+logo: assets/images.png        # Use your hero banner or profile photo
+# description:Data Engineer | Cloud & Big Data | ETL, Analytics & Automation
+# baseurl: ""                        # leave blank for user site
+url: "https://mallinathnpatil1996.github.io" # Your GitHub Pages URL
+show_downloads: true
+theme: jekyll-theme-minimal
+
+# Navigation Menu
+nav:
+  - Home: /#about
+  - Skills: /#skills
+  - Work Experience: /#experience
+  - Portfolio: /#portfolio
+  - Contact: /#contact
+  # - Certifications: /#education
+  # - Achievements: /#achievements
+  # - Hobbies: /#hobbies
+
+# Optional Settings
+# favicon: assets/favicon.ico    # You can add a small favicon for branding
+# github_repo: mallinathnpatil1996/portfolio   # Optional GitHub repo link
+
+
