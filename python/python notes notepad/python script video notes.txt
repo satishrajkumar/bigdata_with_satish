@@ -1,0 +1,69 @@
+algorith means steps of logic.
+
+variable is a name given to a memory or it is called as an identifier.
+
+= is called as assignment operator or a storage.
+
+comments =to provide description
+
+module is programme that contains class,functions,objects 
+import math
+result=math.sqrt(num)
+%=modulus operator
+
+give ":" after each if ,else , and leave indententation to consider that the space belongs to the main block code. 
+
+biggest of 3 nos alterantive method is imp
+----------------------
+
+looping statement executes several times
+
+while loop and for loop
+while loop repeatedly executes the grp of statements as long as the condition is true.
+
+while condition:
+           stat1
+           stat2
+           .....
+no need to provide any input.
+:represents begining of the body and written after condition stat.
+---------------------------------------------------------------
+#to generate the even nos between m and n
+
+m=int(input('from='))
+
+n=int(input('upto='))
+
+print('even numbers')
+print('-----------')
+
+if m%2 !=0:
+       m=m+1
+
+while m<=n:
+     print(m)
+     m=m+2
+print('end')
+
+from=11
+upto=20
+even numbers
+-----------
+12
+14
+16
+18
+20
+end
+--------------------------------------------------
+
+digit=num%10=to get the rightmost digit of a number.
+-------------------
+
+for loop 
+repeatedly executes a group of statements
+for loop works on groups of elements.
+ex:str,list ,tuple,range()
+
+for variable in sequence:
+       statements

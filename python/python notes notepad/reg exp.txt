@@ -1,0 +1,35 @@
+# regular expression ===(regex)
+
+it is a string that contains special characters and symbols to extract data.
+
+\w == any alpha numeric characters
+\d==any numeric characters
+.==any characters
+\r
+\b
+\t
+\n
+
+reg ex are witten using raw string(r) ...spl characters treated as normal characters.
+str=r'hello\nworld'
+print(str)
+hello\nworld
+
+\b to send string from one computer to another.
+
+search () ==searches and returns thr first character
+
+findall() method.
+
+match()---searches only in the beginimg of the main string.
+===============================
+webscraping
+retrieving the data from webpage.
+json regex
+
+christopher reev web scraping videos
+
+
+
+
+

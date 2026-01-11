@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<customers>
+  <customer type="business">
+    <place>UK</place>
+    <amount>15000</amount>
+  </customer>
+  <customer type="personal">
+    <place>India</place>
+    <amount>25000</amount>
+  </customer> 
+  <customer type="personal">
+    <place>Canada</place>
+    <amount>20000</amount>
+  </customer> 
+  
+</customers>

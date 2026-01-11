@@ -1,0 +1,14 @@
+pandas is a package for data analysis.
+
+dataframe is an object that stores or represents the data in the form of rows and columns.
+
+series is an object that represents any single column of dataframe.
+
+C:/Users/admin/Desktop/python/datasets-df-series/empdatas.csv
+
+ df=pd.read_table('C:/Users/admin/Desktop/python/datasets-df-series/textdata.txt','delim_whitespace=True',(columns='A','B','C','D'))
+                   
+
+INDEXING COLUMN TO RETRIEVE THE DATA COLUMNS 
+
+

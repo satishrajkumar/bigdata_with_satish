@@ -1,0 +1,88 @@
+to create subset of df based on condition.
+
+df[df['col1']>1]
+
+df.loc[1:3,['col1','col3']]# to retrieve the rows
+
+df.loc[1:3]#to retrieve exact rows
+
+df.query('col3 in [2,3]')==using query method
+
+df.rename(columns={'col1':'empid','col2':'name'},inplace=True)#rename
+
+df2=df1.assign(gross=lambda x:x.salary-x.tax-x.pf)#assign()
+
+df.insert(loc=1,column='salary',value=[35000,22000,25000])# insert()
+
+df.drop('profit',axis=1,inplace=True) ==delete a column #delete a row
+=================
+df.iloc[2,3]==selelct a particular cell
+
+df.iloc[5:9,[3,4]]
+
+df[(df['Age']>45) &(df['Sex']=='male')]# and operator...enclosed in brackets.
+
+df[['PassengerId','Name']][(df['Age']>45)& (df['Sex']=='male')]
+
+df.where(df<80,'A+')==#WHERE FN
+
+df['test3'].where(lambda x:x<70,'excellent')# in a particular column.
+
+df1=df.group('city')#group by clasuse
+
+df1.get_group('mumbai')#to get that particular group values.
+
+df.agg(['max','count']) #use of aggregate fn.
+
+df.agg({'temperature':['min','max'],'windspeed':['mean','median']})  # find the max and min of temp and mean and median of windspeed 
+
+
+====================================
+#inserting a row
+cust=cust.append({'ID':500,'Gender':'Male','Age':50,'Income':30,'Score':20},ignore_index=True)
+
+#update a column value
+cust.loc[cust['Score']==10,'Score']=11
+
+#delete a row 
+cust.drop(cust[cust.Score==11].index)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

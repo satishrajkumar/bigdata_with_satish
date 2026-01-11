@@ -1,0 +1,4 @@
+what is yarn
+diff betw hadoop 1.x and 2.x
+what is yarn architechter
+how yarn is diffrent from hadoop1.x

@@ -1,0 +1,1 @@
+insert into student1 values('dob',to_char('DD-MON-YY'));

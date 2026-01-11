@@ -1,0 +1,86 @@
+□ Dynamically typed.
+
+In Python, we need not declare the variables. Depending on the value stored in the variable,
+Python interpreter internally assumes the datatype. 
+
+□ Portable
+When a program yields same result on any computer in the world, then it is called a portable
+program. Python programs will give same result since they are platform independent. 
+
+□ Extensible
+There are other flavors of Python where programs from other languages can be integrated into
+Python. For example, Jython is useful to integrate Java code into Python programs and run on JVM
+(Java Virtual Machine). Similarly IronPython is useful to integrate .NET programs and libraries into
+Python programs and run on CLR (Common Language Runtime). 
+
+□ Procedure and Object oriented
+Python is a procedure oriented as well as object oriented programming language. In procedure
+oriented programming languages (e.g. C and Pascal), the programs are built using functions and
+procedures. But in object oriented languages (e.g. C++ and Java), the programs use classes and
+objects.
+An object is anything that exists physically in the real world. An object contains behavior. This
+behavior is represented by its properties (or attributes) and actions. Properties are represented by
+variables and actions are performed by methods. So, an object contains variables and methods.
+A class represents common behavior of a group of objects. It also contains variables and methods.
+But a class does not exist physically.
+A class can be imagined as a model for creating objects. An object is an instance (physical form) of 
+
+. Python is considered as a scripting language as it is interpreted and it is used on Internet
+to support other softwares. 
+
+ the .pyc files, PVM along with necessary Python library. In this
+method, all the .pyc files, related Python library and PVM will be converted into a single
+executable file (generally with .exe extension) so that the user can directly execute that file by
+double clicking on it. In this way, converting the Python programs into true executables is called
+frozen binaries.
+
+
+----------------
+
+GNU is a Unix-like operating system. That means it is a collection of many programs: applications, libraries, developer tools, even games. The development of ...
+-------------------------
+
+[cloudera@localhost ~]$ who
+cloudera tty1         2022-05-24 23:29 (:0)
+cloudera pts/1        2022-05-27 06:45 (:0.0)
+[cloudera@localhost ~]$ whoami
+cloudera
+[cloudera@localhost ~]$ 
+
+--------------------------
+
+ Umask, or the user file-creation mode, is a Linux command that is used to assign the default file permission sets for newly created folders .
+
+---------------------------
+string datatype
+we can do indexing,slicing.repetition,del(),find(),count(),strip(),replace(),upper()
+
+We can do only indexing in case of bytes or bytearray datatypes. We cannot do slicing or
+repetitions.
+
+
+lst.append=we can append only one elememt but using lst.extend many elements.
+
+To convert a list into tuple, we can use tuple() method.
+tpl = tuple(lst)
+
+Generally, range is used to repeat a for loop for a specified number of times.
+
+Literals in Python
+A literal is a constant value that is stored into a variable in a program. 
+--------------------
+lists and tuples 
+If a data is needed in a program which is not supposed to be changed, then it is better to put it in 'tuples' than in 'list'.
+
+Tuples are stored in a single block of memory. Tuples are immutable so, It doesn't require extra space to store new objects. Lists are allocated in two blocks: the fixed one with all the Python object information and a variable-sized block for the data. It is the reason creating a tuple is faster than List.
+
+
+garbage collector is a mechanism to collect the dead objects.
+it will relieve the space to the pvm .
+
+
+
+
+
+
+

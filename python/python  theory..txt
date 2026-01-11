@@ -1,0 +1,178 @@
+why list iteration is slower? and why processing of tuple or creating tuple is faster than list?
+
+List has a large memory.tuple is stored in a single block of memory which is fixed .
+creating list is slower because two memory blocks needs to be acceesed.
+lists are allocated in two blocks 
+fixed one stores the python object infor and variable one stores the data.
+=====================================================================
+Generator functions are ordinary functions defined using yield instead of return.
+A generator function is the easiest way to create an Iterator object.
+they can be executed only once.
+
+Iterators are objects that have an __iter__ and a __next__ (next in Python 2) method
+=============================================================
+lists tuple differences
+
+lists consume more memory
+lists are mutable
+lists contains different types of objects
+list iteration is slower tuple processing is faster 
+elements can be acceses faster in tuples.
+===========================================================
+ decorator is just a fn that takes another fn as an argument ,add some kind of functionality and then returns another fn .
+ all of this without altering the source code of the original fn that you passed in.
+==============================================
+list comprehension ls==[i for i range(10)if i%2]
+dict comprehension d1={key:value for (key,value) in iterable if conditional}
+
+===================================================
+memory management in python
+
+heap memory==contains all python objects and data structures
+
+built in garbage collector which recycles all the unused memory.
+it frees the heap space when an object is no longer referred by the programme.
+
+The methods/method calls and the references are stored in stack memory and all the values objects are stored in a private heap.
+==================================================================
+init keyword in python
+__init__.py file ==lets the python interpreter know that a  directory contains code for a python module.without it one cannot import modules from another folder into your project.
+
+__init__() function==similar to constructors in c++ and java,
+constructors are used to initialize the class attributes.
+==========================================================================
+self in python .
+
+The self is used to represent the instance of the class. With this keyword, you can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
+
+ If there was no self argument, the same class couldn't hold the information for both these objects.
+
+ The use of self makes it easier to distinguish between instance attributes (and methods) from local variables.
+
+self parameter is a reference to the current instance of the class,and is used to access variables that belongs to the class.
+==============================================================
+break continue and pass 
+
+continue== it will stop the current execution and the control goes back to the start of the loop.
+
+pass stat=null stat..interpreter does nothing.
+==========================
+pickling=== pickle.dump()
+also called as serialization ...
+involves converting a pthon object into a series of bytes which canbe written out to a file.
+
+unpickling ==pickle.load()
+deserialization ,involves converting series of bytes into a python object it represents.
+====================================
+fns in set lists dict tuples.
+
+===================
+*args and **kwargs 
+
+when not clear how many args one need to pass to a particular fn 
+
+**args ==represents a varied no of args and is used to add together the values of multiple args.
+
+**kwargs== represents an arbitrary no of args that are passed to a fn.
+stored in a dictionary.
+==================================================
+exception handling in python
+try except else finally.
+
+try== block will test the exceptional error to occur.
+except ==here you can handle the error
+else ==if there is no exception then this block will be executed
+finally==finally block always get executed either exception is generated or not.
+ 
+====================================================
+
+pip in python 
+we can use pip to install packages that do not come with python.
+
+python pip is a package manager for python packages.
+===============
+diamond problem
+
+what java deos not allow is multiple inheritance where one class can inherit the properties from more than one class.It is known as the diamond pblm. 
+
+in python multiple inheritance is supported and when all the class has the same method names then the first method is called first
+
+The diamond problem occurs when two classes have a common parent class, and another class has both those classes as base classes.
+
+class A:
+    def display(self):
+        print("This is class A")
+        
+class B(A):
+    def display(self):
+        print("This is class B")
+        
+class C(A):
+    def display(self):
+        print("This is class C")
+        
+class D(B, C):
+    pass
+
+obj = D()
+obj.display()
+=========================
+
+print(id(list1))==mutable
+print(id(dict1))==immutable
+=================================
+lists and arrays 
+heterogeneous (store the values of different types)
+lists are build-in data structures
+lists are less compatible to store the data
+consumes a large memory
+lists are suitable for storing longer sequence of the data item.
+=======================================================================
+d3=d2.copy()
+d3=d2
+
+copy() will not modify the newly created.
+
+================================================================
+lambda fn can have any no of args but only one expression.
+returns the fns
+lambda[args]:expression
+
+==============================================
+namespace in python.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

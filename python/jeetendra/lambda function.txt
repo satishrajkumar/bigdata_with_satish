@@ -1,0 +1,168 @@
+LAMBDAS FUNCTION:-
+                  lambdas is a function that does not have a name and return statment
+
+lambada is also known as anongms function
+
+lambdas provide compact code(less code)
+
+=========================================================================
+# find square value of a number
+
+def square(a):
+    b=a*a
+    return b
+b =square(4)
+print('square is:-',b)
+
+#by lambda method find square value of a number
+
+f =lambda x: x*x
+print('the square is ',f(4))
+
+=========================================================================
+
+# the sum of two numbers
+
+def sum(a,b):
+    c =a+b
+    return c
+sum = sum(10,20)
+print('the addition is',sum)
+
+#by lambda method addtion of two method
+
+F = lambda a,b:a+b
+print('the addition of two numbers: ',F(10,34))
+
+=========================================================================
+# write a lambda to test whether a given number is even or not
+
+def even_not(x):
+    if x%2==0:
+        print('even')
+    else:
+        print('not even')
+    return x
+x = even_not(5)
+
+# by lambda method
+
+F = lambda x: 'even' if x%2==0 else: 'not even'
+
+print('the number is',F(x))
+======================================================================
+F = lambda x: 'zero' if x==0 else('even' if x%2==0 else 'odd')
+
+print('the number is',F(0))
+----------------------------------------------------------------------
+# write a program to create a lambda function
+#to find square of given number
+
+F = lambda x: x*x
+print('the square of: ',F(5))
+---------------------------------------------------------------------
+# lambda function to find biggest of given values
+
+F = lambda x,y: x if x>y else y
+print('the gretest number is ',F(6,7))
+
+
+=========================================================================
+
+FILTER FUNCTION:-
+                 that element out element from a sequence depending on a lambda
+
+every element in the element in sequence
+-------------------------------------------------------------------------
+
+
+# create a lambda that returns even numbers from a list of numbers
+
+mylist = [11,12,13,14,-16,9,10]
+
+obj=filter(lambda x: x%2==0, mylist)
+
+for i in obj:print(i)
+=========================================================================
+
+=========================================================================
+MAP FUNCTION:-
+              that filters out and parphase modifies the element from sequence based on lambda
+-------------------------------------------------------------------------
+
+# create a lambda that returns square of all element in a list
+
+
+list=[11,12,13,14,-16,9,10]
+
+F = map(lambda x: x*x,list)
+
+for i in F:print(i)
+----------------------------------------------------------------------
+
+#We can apply map() function on multiple lists also.But make sure all list should have same 
+#length.
+
+I1 =[1,2,3,4]
+I2 =[1,2,4,5]
+I3 = list(map(lambda x,y:x*y,I1,I2))
+print('the multiplication of two number is :',I3)
+
+--------------------------------------------------------------------
+#The function can be applied on each element of sequence and generates new sequence.
+
+I = [2,3,4,56,56]
+F =map(lambda x:2*x,I)
+for i in F:print(i)
+=====================--==========================================-
+-------------------------------------------------------------------------
+REDUCE:-
+        reduce is a function that reduce total list or tuple is single value depending on a lambda
+
+------------------------------------------------------------------------
+
+# create a lambda function to calculate product of all element of a list
+
+mylist= [11,12,13,14,-16,6,9,10]
+
+from functools import reduce
+
+result =reduce(lambda x ,y:x*y,mylist)
+print(result)
+
+-------------------------------------------------------------------------
+# create a lambda function to calculate product of all element of a list
+
+mylist= [11,12,13,14,-16,6,9,10]
+
+import functools as fu
+
+result = fu.reduce(lambda x ,y:x*y,mylist)
+print(result)
+
+-----------------------------------------------------------------------
+
+# create a lambda function to calculate product of all element of a list
+
+mylist= [11,12,13,14,-16,6,9,10]
+
+import functools as fu
+
+result = fu.reduce(lambda x ,y:x*y,mylist)
+print(result)
+
+-------------------------------------------------------------------------
+
+# create a lambda function to calculate product of all element of a list
+
+mylist= [11,12,13,14,-16,6,9,10]
+
+from functools import reduce
+
+result =reduce(lambda x ,y:x*y,mylist)
+print(result)
+
+-========================================================================
+from functools import * 
+result=reduce(lambda x,y:x+y,range(1,101)) 
+print(result) #5050 

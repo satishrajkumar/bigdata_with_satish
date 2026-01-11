@@ -1,0 +1,109 @@
+MODULE :-
+         a module is a python program that contains that object function class
+
+math.module = sqrt()
+
+arith file
+
+# add two number by module 4 ways
+
+def add(a,b):
+    c = a*b
+    print('multi= ', c)
+
+def sub(a,b):
+    c = a-b
+    return c
+
+use file
+import airth
+
+airth.add(10,20)
+r = airth.sub(10,20)
+print(r)
+
+
+-----------------------------------------------------------------------
+import airth as ar
+
+ar.add(10,20)
+r = ar.sub(10,20)
+print('subtraction is=',r)
+------------------------------------------------------------------------
+
+
+from airth import *
+
+add(10,20)
+r = sub(10,20)
+print('subtraction is=',r)
+-------------------------------------------------------------------------
+from airth import add ,sub
+
+add(10,20)
+r =sub(10,20)
+print('subtraction is=',r)
+========================================================================
+
+PACKAGING:=
+
+
+# add two number
+
+def add(a,b):
+    c = a*b
+    print('multi= ', c)
+
+def sub(a,b):
+    c = a-b
+    return c
+
+
+
+
+import mypack.airth
+
+mypack.airth.add(10,20)
+r =mypack.airth.sub(10,20)
+print('subtraction is=',r)
+=========================================================================
+
+# add and subtraction two numbers
+
+
+def add(a,b):
+    c = a+b
+    return c
+
+def sub(a,b):
+    c =a-b
+    return c
+
+
+
+import mypack.jitu1 as r
+
+j =r.add(10,20)
+t=r.sub(20,30)
+print('addition is',j)
+print('subtraction is ',t)
+=========================================================================
+
+# add and subtraction two numbers
+
+
+def add(a,b):
+    c = a+b
+    return c
+
+def sub(a,b):
+    c =a-b
+    return c
+
+from mypack.jitu1 import *
+
+r=add(10,25)
+t=sub(10,25)
+print('the subtraction is:-',t,'the dition is:-',r)
+
+=========================================================================

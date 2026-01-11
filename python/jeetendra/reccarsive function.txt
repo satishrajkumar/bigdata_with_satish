@@ -1,0 +1,209 @@
+recursive function:-
+                    the function calling itself the phenomeanon
+
+
+advantages
+
+less code
+
+
+
+def fact(n):
+    if  n == 0:
+        res=1
+    else:
+        res=n*fact(n-1)
+    return res
+res = fact(4)
+print('result of factorial= ',res)
+=======================================================================
+
+DECORATOR:-
+           decorator is a function that modified the result of another function
+
+there are two uses
+
+The main objective of decorator functions is we can extend the functionality of existing 
+functions without modifies that function.
+
+decorator modifies the result of anather function
+decorator modifies the type of another function
+
+function:-
+
+1)decorator takes a func as its parameter
+2)decorator contains another function inside
+3)decorator return another function
+
+# a decorator that increments the result of another func by 10
+
+def decor(func):
+    def inner():
+        res=func()
+        return res+10
+    return inner
+
+def myfunc():
+    return 100
+
+x =decor(myfunc)
+print(x())
+
+
+=======================================================================
+
+# a decorator that increments the result of another func by 10
+
+def decor(func):
+    def inner():
+        res=func()
+        return res+10
+    return inner
+
+@decor
+def myfunc():
+    return 100
+
+x=myfunc()
+print(x)
+-------------------------------------------------------------------------
+def decor(func):
+    def inner(name):
+        if name=="sunny":
+            print("hello sunny bad morning")
+        else:
+            func(name)
+    return inner
+
+@decor
+def wish(name):
+    print("hello",name,"good morning")
+
+wish("durga")
+wish("ravi")
+wish("sunny")
+        
+-------------------------------------------------------------------------
+def decor(func):
+    def inner(name):
+        if name=="sunny":
+            print("hello sunny bad morning")
+        else:
+            func(name)
+    return inner
+
+def wish(name):
+    print("hello",name,"good mornig")
+
+x=decor(wish)
+
+wish("durga")
+wish("sunny")
+
+x("durga")
+x("sunny")
+========================================================================
+# decorator chaning
+
+We can define multiple decorators for the same function and all these decorators will 
+form Decorator Chaining.
+
+def decor1(func):
+    def inner():
+        x=func()
+        return x*x
+    return inner
+
+def decor(func):
+    def inner():
+        x=func()
+        return 2*x
+    return inner
+
+@decor1
+@decor
+def num():
+    return 10
+
+print(num())
+-------------------------------------------------------------------------
+
+=======================================================================
+GENRATOR:-Generator is a function which is responsible to generate a sequence of values.
+We can write generator functions just like ordinary functions, but it uses yield keyword to 
+return values.
+
+-------------------------------------------------------------------------
+Advantages of Generator Functions:
+1. when compared with class level iterators, generators are very easy to use
+2. Improves memory utilization and performance.
+3. Generators are best suitable for reading data from large number of large files
+4. Generators work great for web scraping and crawling.
+-------------------------------------------------------------------------
+
+def gen(m,n):
+    while m<=n:
+        yield m
+        m+=1
+
+obj=gen(10,20)
+print(obj)
+
+for i in obj: print(i)
+------------------------------------------------------------------------
+def countdown(num):
+    print("start countdown")
+    while(num>0):
+        yield num
+        num=num-1
+
+values=countdown(5)
+for x in values:
+    print(x)
+------------------------------------------------------------------------
+# to genrate first n number
+
+def firstn(num):
+    n=1
+    while n<=num:
+        yield n
+        n=n+1
+
+values=firstn(5)
+for x in values:
+    print(x)
+========================================================================
+# to genrate fibonacci numbers
+
+# the next is the sum of previous 2 numbers
+
+def fib():
+    a,b=0,1
+    while True:
+        yield a
+        a,b=b,a+b
+for f in fib():
+    if f>100:
+        break
+    print(f)
+
+
+    
+
+
+
+
+=======================================================================
+def elct(units):
+    if units < 100:
+        bill =0
+    elif units <500:
+        bill=units*10
+    else:
+        bill = units*15
+    return bill
+
+units =int(input('enter a units '))
+bill = elct(units)
+print("please pay rs. ", bill)
+=======================================================================

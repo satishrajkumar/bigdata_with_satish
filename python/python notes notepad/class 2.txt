@@ -1,0 +1,26 @@
+idle= integrated development  env
+
+l light weight=uses very less memory and less processor time 
+
+source code
+run code
+debug code
+display the results
+
+
+>>> python promt /shell promt = to run commands
+
+
+1.python commands/statements =run one statement/command at a time ,
+
+= storage 
+
+in idle = run python commands 
+        =rum python programs too
+
+==================================
+
+python command window 
+
+line to line statement execution once at a time .
+only for exec of commands/statements and not for programs .

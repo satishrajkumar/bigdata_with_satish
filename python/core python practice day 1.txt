@@ -1,0 +1,40 @@
+matrices 
+
+matrix method ==convert 2d array in to matrix ....
+matrix(2d array)
+matrix('string')
+
+In numpy there is a diagonal function and sort function when comes to 2d matrix.
+numpy module functions in matrix.
+1)reshape()
+2)flatten()
+
+===================================
+functions
+
+A function can return more than one value. When several values are returned, they are stored
+into a tuple and then returned.
+
+It is possible to send a group of strings or numbers in the form of a list to a function and do any
+operation inside the function. 
+
+When local variable and global variable have same name, we can use globals() function to retrieve
+the global variable value inside the function. Ex: globals()[‘var’]
+
+Functions are first class objects
+That means we can use functions exactly as objects.
+
+Formal and actual arguments
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+#df.where(df.test3<40,'excellent')===pblm with the where condition is resolved using the loc() fn or lambda ()
+
+df.loc[df.test3==45,'test3']='good'==particular column
+
+df[['test3','test2']].where(lambda x:x<50,'good')==particular columns
+
+df.where(df<70,"A+")==universal
+
+
+===============
+
+df1.agg('max')
+df1.max()       ==both give the same results .
+
+df1.get_group('mumbai')#to get the group data.
+
+df[['temperature','windspeed']].agg(['min','max'])
+
+.agg({'temperature':['min','max'],
+       'windspeed':['mean','median']})
+====================
+df2=df1.assign(gross_sal=lambda x:x.salary-x.tax-x.pf)
+#to assign a new column from the existing column .
+==========
+df.query('col1>2')
+                   =both retrieve the same
+df[df.col1>2]
+==============
+
+
+

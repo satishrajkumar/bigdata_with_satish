@@ -1,0 +1,4 @@
+what is hdfs?
+name node and its functions
+data node and its functions
+what are block, replication, heartbeet signal, block report in hadoop?

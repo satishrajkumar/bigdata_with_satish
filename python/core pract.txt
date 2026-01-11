@@ -1,0 +1,18 @@
+m=int(input())
+x=m
+if x%2!=0:x=x+1
+
+while x<=20:
+    print(x)
+    x=x+2
+==================================
+lst = [1,2,3,4]
+s = int(input('Which element to search? '))
+
+for i in lst:
+    if s==i:
+        print('found')
+        break
+else:print('not found')
+
+==============================

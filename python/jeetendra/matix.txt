@@ -1,0 +1,111 @@
+MATRIX:-
+
+matrix represent of group of elements arranged in rows and cols
+a matrix with only one row --row matrix
+a matrix with only one column---2column matrix
+
+from numpy import *
+a =array([[1,2,3],[4,5,6],[7,8,9]])
+m1 =matrix(a)
+m1
+matrix([[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]])
+b =array([[1,2,3],[4,5,6],[7,8,9]])
+m2 =matrix(b)
+m2
+matrix([[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]])
+
+m1+m2
+matrix([[ 2,  4,  6],
+        [ 8, 10, 12],
+        [14, 16, 18]])
+m1-m2
+matrix([[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]])
+m1/m2
+matrix([[1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.]])
+m1.T
+matrix([[1, 4, 7],
+        [2, 5, 8],
+        [3, 6, 9]])
+m2.transpose()
+matrix([[1, 4, 7],
+        [2, 5, 8],
+        [3, 6, 9]])
+m1.diagonal()
+matrix([[1, 5, 9]])
+m1.sum()
+45
+
+m1.max()
+9
+m1.max()
+9
+sort(m1)
+matrix([[1, 2, 3],
+        [4, 5, 6],
+
+s1 = sort(m1, axis=0)
+s1
+matrix([[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]])
+sort(m1, axis=0)
+matrix([[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]])
+=======================================================================
+# write a program product of two matrix
+
+
+from numpy import *
+
+r1,c1 = [int(i) for i in input('how  many row,col? ').split(',')]
+r2,c2 = [int(i) for i in input('how many row col?').split(',')]
+
+arr1 = zeros((r1,c1),int)
+arr2 = zeros((r2,c2),int)
+
+print('enter a matrix1: ')
+for i in range(r1):
+    arr1[i] = [int(x) for x in input().split()]
+print(arr1)
+m1 = matrix(arr1)
+    
+print('enter a matrix2: ')
+for i in range(r2):
+    arr2[i] = [int(x) for x in input().split()]
+
+print(arr2)
+
+m2 = matrix(arr2)
+
+print('the product matrix is: ')
+mat = m1*m2
+print(mat)
+=====================================================================
+
+# write the python program to acept the  kb and their transpose
+
+from numpy import *
+
+r ,c=[int(i) for i in input('how many row,col? ').split(',')]
+
+arr =zeros((r,c),int)
+print('enter a matrix: ')
+for i in range(r):
+    arr[i] = [int(x) for x in input().split()]
+print(arr)
+m = matrix(arr)
+
+print('trnspose matrix: ')
+
+m1 =m.transpose()
+print(m1)
+======================================================================

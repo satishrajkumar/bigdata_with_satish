@@ -1,0 +1,456 @@
+OOPS:- OBJECT ORIENTED PROGRAMMING SYSTEM
+            :-is computer programing which is return using object and classes
+---------------------------------------------------------------------------------------------------------------------------------
+what is object
+ans:-pysical existance of a class is nothing but object.we can create any number of objects for a class
+
+---------------------------------------------------------------------------------------------------------------------------------
+pop--program oriented------  
+computer programing which is return using function and procedue
+----------------------------------------------------------------------------------------------------------------------------------
+what is class
+ans:- 1)in python every thing is  an object to create objects we required some model or plan or blue print,
+   which is nothing but class
+2)we can write a class to represented by properties(attributes) and action (behaviour)of object.
+3)properties can represented by variables
+4) action can represented by method
+-----------------------------------------------------------------------
+what is difference between object and class
+ans:-class
+          :-1) class is a collection of data member and member function
+            2)class always declard with keyword class.
+            3) a class  can exist without any object
+    object:-
+            1) object is instant of class
+            2)at a time of object we doesn't required any keyword
+            3) an object does not exist without any class
+---------------------------------------------------------------------------------
+what is features of object oriented programing system
+ans:-1)class
+       2)modul
+       3)object
+       4)inheritance
+     5)polymorishim
+     6)data abstraction
+     7)encapsulation
+-------------------------------------------------------------------------------------
+object oriented programing system follow all the features of oops
+ans:-1)simula-67
+        2)c++
+       3)vc++
+       4) java 
+      5)net 
+      6)python
+
+------------------------------------------------------------------------------------
+Within the Python class we can represent data by using variables. 
+There are 3 types of variables are allowed. 
+1. Instance Variables (Object Level Variables)
+2. Static Variables (Class Level Variables)
+3. Local variables (Method Level Variables)
+---------------------------------------------------------------------------------------------------------------
+Within the Python class, we can represent operations by using methods. The following are various 
+types of allowed methods 
+
+1. Instance Methods
+2. Class Methods 
+3. Static Methods
+-----------------------------------------------------------------------------------------------------------------
+# how to create a vlass and how to creat object
+
+class person:
+    # properties  = instance vars
+    def __init__(self):
+        self.name = 'sunil'
+        self.age = 22
+
+    # action = functions or methods
+    def talk(self):
+        print('hello i am ',self.name)
+        print('my age is',self.age)
+
+p1 = person()
+p1.talk()
+
+p2 = person()
+p2.talk()
+-----------------------------------------------------------------------------------------------------------------
+EX.
+class person: this colon is a ending of header part
+def __init__(self)     this underscore is created hidden internally by pvm
+what is self
+ans:-it is defined parameter which store memory address of the connect object
+ex. self.name='jitendra'
+       self.age = 33
+-------------------------------------------------------------------------------------------------------------------------
+what is constructor
+ans:-it is a special mehod to create instant variables
+constructer creating object during the process
+----------------------------------------------------------------------------------------------------------------------
+what is self variables
+ans:-self is variable created by pvm to store current object momory address
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+what happend  when an object is created
+ans:-
+1) pvm alloctes memory
+2) pvm store object memory address into self
+3)pvm  excute the construct then create a object
+4)pvm returns the memory address of the object
+----------------------------------------------------------------------------------------------------------------------------------------------
+***every program not nun by pvm ,pvm allocate manger for run the program that manger name is main
+---------------------------------------------------------------------------------------------------------------------------------------------------
+*****what is difference between default parameter and parameterzied constructor
+
+ ans:- 1) default parameter or zero parameterzied constructor:
+               1)is  a constructor without any parameter
+               2) default parameter is a useful to initilize all object with same data
+
+         2)parametrized constructor:-
+                1)is a constructor one or more parameter
+                 2)it is useful to initilized every object with different data
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class person:
+    def __init__(self,n,a):
+        self.name = n
+        self.age = a
+
+    def talk(self):
+        print('my name is ',self.name)
+        print('my age is ', self.age)
+
+p1 = person('jitendra',45)
+p1.talk()
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+class student:
+    def __init__(self):
+        self.rno = 345
+        self.name = 'jitendra badwe'
+        self.addr = ' at post nagpur'
+        self.marks = [55, 67, 97, 56, 87]
+
+    def display(self):
+        print('roll no:',self.rno)
+        print('student name : ',self.name)
+        print('student address ',self.addr)
+        print('student marks ',sum(self.marks))
+        print('% of marks ',sum(self.marks)/500*100)
+        
+p1 = student()
+p1.display()
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+class student:
+    def __init__(self):
+        self.rno = 345
+        self.name = 'jitendra badwe'
+        self.addr = ' at post nagpur'
+        self.marks = [55, 67, 97, 56, 87]
+
+    def display(self):
+        print('roll no:', self.rno)
+        print('student name : ', self.name)
+        print('student address ', self.addr)
+
+
+        tot = sum(self.marks)
+        per = tot/len(self.marks)
+        print('total marker',tot)
+        print('percentage:',per)
+        print('percentege {:.3f}'.format(per))
+
+p1 = student()
+p1.display()
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+class student:
+    def __init__(self,rno,name,addr,marks):
+        self.rno= rno
+        self.name= name
+        self.addr = addr
+        self.marks = marks
+
+    def display(self):
+        print('student roll no is',self.rno)
+        print('student name is',self.name)
+        print('student address is',self.addr)
+        print('student marks is',self.marks)
+
+        tot = sum(self.marks)
+        per = tot/len(self.marks)
+        print('total marks',tot)
+        print('percentage',per)
+        print('percentage is {:.2f}'.format(per))
+
+p2 = student(234,'jitendra badwe','nagpur',[87,89,68,56,56])
+p2.display()
+-----------------------------------------------------------------------------------------
+ 
+#Display the manager name,annual salary,income tax and HRA
+'''Note:- If annual salary<=250000 then income tax=0
+       If annual salary>250000 then income tax=10%
+       HRA =15.5% of annual salary
+'''
+
+class manager:
+    def __init__(self,i,n,d,a):
+        self.id = i
+        self.name = n
+        self.deptname = d
+        self.annual_salary = a
+
+    def result(self):
+        if self.annual_salary <= 250000:
+            self.tax=0
+        else:
+            self.tax=0.1*self.annual_salary
+        print('manager name: ',self.name)
+        print('manager annual salary ',self.annual_salary)
+        print('manager income tax: ',self.tax)
+        HRA=0.155*self.annual_salary
+        print('manager HRA : ',HRA)
+
+p1 = manager(101,'jitendra','it',50000000)
+p1.result()
+---------------------------------------------------------------------------------------
+METHODS IN PYTHON
+
+1) INSTANCE METHOD
+      instance variable are the whose separate copy is available to every object
+
+    
+     A method that acts on instance variable is known as instance method
+
+    self.x or self.variabale exampale of instant variable
+
+how to know the instant variable ?
+ans:- self--> it is given any method then it is instance method
+
+Two types of instant method
+    A) Accessor method/ getter method
+             is a method that reads instance variables it will not modified
+    
+format)  getxxx-->getid(),getname(),getsalary()
+    B) mutator method/setter method:-
+                                                             is a method that not only reads the instance variables but also modify then.
+  format) setid(),setaddress(),setdeptname()
+
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# accessor and mutator method
+class employee:
+    def __init__(self):
+        self.id = 1001
+        self.name = "vinay"
+
+    # accessor methods
+    def getid(self):
+        return self.id
+    def getname(self):
+        return self.name
+
+e1 = employee()
+
+print('id= ',e1.getid())
+print("name ",e1.getname())
+--------------------------------------------------------------------------------------------                          
+# accesssor and mutator method
+
+class employee:
+    # constructor
+    def __init__(self):     #  self is default parameter # construct is constat
+        self.name = 'jitendra'
+
+    # accessor method
+    def getname(self):
+        return self.name
+e1 = employee()
+str = e1.getname()
+print(str)
+----------------------------------------------------------------------------------------
+#accessor and mutator method
+class employe:
+    def __init__(self):
+        self.id=1001
+        self.name='Ashwin'
+    #accesssor method
+    def getID(self):
+        return self.id
+    def getName(self):
+        return self.name
+
+    #mutatator method
+    def setID(self):
+        self.id=1002
+    def setName(self):
+        self.name='Karuna'
+
+e=employe()
+print('Id: ',e.getID())
+print('Name: ',e.getName())
+e.setID()
+e.setName()
+print('Changed Id: ',e.getID())
+print('Changed Name: ',e.getName())
+
+output:=
+Id:  1001
+Name:  Ashwin
+Changed Id:  1002
+Changed Name:  Karuna
+---------------------------------------------------------------------------------------------------------------------------------
+CLASS METHOD:- 
+                                 a class variable is variable whose single copy is shared by all the object 
+-->in this variable are directly created 
+-->it use cls ex. def modify(cls):
+A method that acts on class variable is called class method
+
+what is cls
+ans:-cls is default parameter that refers to the class variables memory
+
+-->if we want to class method you have use decorator
+
+@class method
+-->it will convert modify method into a class method
+
+--> if you don't write decorator it will consider modify variables a instant variable
+
+
+CLS=store memory address
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+# class variables and class methods
+class myclass:
+    x = 10                                 # this is class variableor static variable
+
+    @classmethod
+    def modify(cls):
+        cls.x+=1
+m1=myclass()
+m2=myclass()
+print(m1.x,m2.x)
+
+m1.modify()        #myclass.modify()
+print(m1.x,m2.x)
+
+m1.x+=1
+print(m1.x,m2.x)
+
+output:=
+10 10
+11 11
+12 11
+
+-----------------------------------------------------------------------------------
+#To count the no. of objects created for a class
+
+class Myclass:
+    x=0   #this is class or static variable
+    def __init__(self):
+        Myclass.x+=1
+    @staticmethod
+
+
+    def display():
+        print('No of objects: ',Myclass.x)
+m1=Myclass()
+m2=Myclass()
+m3=Myclass()
+Myclass.display()    #m1.display() <--In this type also we can call
+
+Output:=
+No of objects:  3
+=========================================================================================
+STATIC METHOD:-
+ --> it acts on class or static variable
+----> how to call-->obj.method() or class.method()
+----> use decorator @ static method
+
+Q) what is difference between class and static method?
+ans:-->1)any modifiction done in class variable they will affect all the object
+             2) static method any modifiction done in class variables but they will not affect all the object
+-----------------------------------------------------------------------------------------------------------------------
+#write a static method to find square root values 
+
+class Myclass:
+    @staticmethod
+    def sroot(x):
+        res=x**0.5
+        return res
+y=Myclass.sroot(16)
+print('The square root: ',y)
+
+'''
+or
+m=Myclass()
+res=m.sroot(16)
+print('The square root: ',res)
+'''
+
+=================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class variable or static variables:-
+                                                      a class variable is a variable whole single copy is shared by all the object
+A method that acts on class variable is called class method
+-------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+# static vars and static methods
+# to find square root value'''
+class myclass:
+    @staticmethod
+    def sroot(x):
+        res=x**0.5
+        return res
+y=myclass.sroot(16)
+print('square root: ',y)
+

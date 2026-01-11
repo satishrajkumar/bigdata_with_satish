@@ -1,0 +1,157 @@
+reversed() ==this is equal to slicing=[::-1]
+
+reversed fn in string reverese both characters and words.
+lufarp si eman ym== in str 
+
+reversed fn in list will reverse only words and not strings
+eg: my name is praful
+
+reversed(str)=praful is name my== in list
+
+if you need result like ym eman si lufarp go with for loop.
+
+
+=====================================================================
+
+instance variables ==whose separate copy is created in all the instances of the current class
+
+class variables==whose single copy is available to all the instances of the class,if we modify the class variable in an instance it will be modified in all the instances of that class.
+
+instance variable can be called obj.var
+class variables accesses from class  methods having default parameter as cls .
+eg==cls.x
+
+class methods are marked with the decorators.
+==========================================================================
+When we modify a class variable in the class namespace, its modified value is available to all instances.
+When we modify a class variable in the instance namespace, then it is confined to only that instance.
+Its modified value will not be available to other instances.
+=======================================================================
+The purpose of a method
+is to process the variables provided in the class or in the method.
+
+static methods
+================
+ when the processing is at class level
+
+For example, setting environmental variables, counting the number of
+instances of the class or changing an attribute in another class etc
+
+Static methods are written with a decorator @staticmethod
+above them.
+
+Static methods are called in the form of classname.method().
+
+inner class
+============
+Inner classes are useful when we want to
+sub group the data of a class.
+
+------
+
+#encapsulation
+bundling of data and methods as a single unit .
+class is an ex
+
+abstraction
+==============
+by default all the members of a existing class 'public' in python.
+
+inheritance
+================
+Creating new classes from existing classes in such a way that all the features of the existing classes are available to the newly created classes – is called ‘inheritance’
+
+constructors in inheritance
+============================
+That means, the sub class
+constructor is replacing the super class constructor. This is called constructor overriding.
+========================================================================
+An abstract method is a method whose action is redefined in the sub classes as per the requirement
+of the objects.
+
+Generally abstract methods are written without body since their body will be defined
+in the sub classes.
+
+To mark a method as abstract,
+we should use the decorator @abstractmethod.
+
+On the other hand, a concrete method is a method
+with body
+
+An abstract class is a class that generally contains some abstract methods. PVM cannot create objects
+to an abstract class.
+Once an abstract class is written, we should create sub classes and all the abstract methods should be
+implemented (body should be written) in the sub classes. Then, it is possible to create objects to the
+sub classes. 
+
+A meta class is a class that defines the behavior of other classes. Any abstract class should be derived
+from the meta class ABC that belongs to ‘abc’ module. So import this module, as:
+from abc import ABC, abstractmethod
+(or) from abc import *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

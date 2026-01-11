@@ -1,0 +1,70 @@
+Demonstrate your skills in Python.
+Implement webscraping and use APIs to extract data in Python.
+Play the role of a Data Engineer working on a real project to extract, transform and load data using Jupyter notebook and Watson Studio.
+==========================
+Python for Data Engineering is one of the crucial skills required in this field to create Data Pipelines, set up Statistical Models, and perform a thorough analysis on them
+========================
+What does a data engineer use Python for?
+Python is used mainly for data analysis and pipelines. Data Engineers use Python mainly for data munging such as reshaping, aggregating, joining disparate sources, etc., small-scale ETL, API interaction, and automation.
+=================================
+Do data engineers use pandas?
+Pandas is a great tool for data analysis and engineering. I've been using it for about three years — prior to that, it was a mish-mash of Python libraries and a bit yucky.07-Nov-2019
+=====================
+Scripting, an alternative to bash shell
+Deriving proof of concept before actual development in Java or other more sophisticated languages
+Data analysis, manipulation and reporting
+Gluing libraries written in different languages, web APIs and any other programs
+Rapid prototyping
+XML processing
+=======================================
+ including data cleaning, processing and working on production databases.
+
+Another helpful one is:
+
+Python Data Cleaning Cookbook: Modern techniques and Python tools to detect and remove dirty data and extract key insights 
+===========================
+Python for Data Engineering is one of the crucial skills required in this field to create Data Pipelines, set up Statistical Models, and perform a thorough analysis on them.
+=========================
+Top 5 Python Packages used in Data Engineering
+Pandas
+pygrametl
+petl
+Beautiful Soup
+SciPy
+===============
+Use Cases of Python for Data Engineering
+Data Acquisition
+Data Manipulation
+Data Modelling
+Data Surfacing
+===================
+Lists, Tuples, dictionary, sets. Numpy, Pandas, Matplotlib, Seaborn, Scipy, Scikit-learn, Tensorflow, Keras. These are the most important and common topics to learn.
+=====================
+Keywords, Data Types, and Operations on these
+Control Flow of python program
+Basic Data Structures - Lists, Tuples, Sets, Dictionary, Strings, Ordered dictionary
+Functions, Packages
+Iterators
+===========
+Generators, Decorators
+Classes & Objects
+Math Library
+Working with Regular Expressions
+================
+Data extraction
+Data processing/cleaning (you will be doing this up to 50–60% of the time you’re analysing data)
+Data modeling (this is the fun part where you’re applying machine learning algorithms and stuff on training and testing sets)
+Data visualization
+Presentation of insights learned
+==============
+Knowing how to use the print statement with different data types and also converting them e.g. strings to integer and integer to strings.
+Knowing the difference between local vs global variables and how to use them.
+How to read, extract and manipulate Strings character by character.
+How to read, extract and manipulate Lists and Dictionaries.
+For and While loops, using them with range, list, dictionary and also when/how break the loops.
+Boolean, arithmetic and comparison operators
+Conditions (if, elif & else)
+Functions
+Class and objects
+These are also the basics
+============

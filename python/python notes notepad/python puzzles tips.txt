@@ -1,0 +1,111 @@
+we can write like def common letters()
+                     and here input()
+                     to enter the strings .
+-------------------------
+
+split fun()
+
+
+---------
+day 1
+
+dict function does not gives duplicate keys but can give duplicate values.
+
+s1=set(d.items())  to convert dict items in to set.
+
+----------------
+result=dict(zip(keys,values)) =zip fn to join keys and values
+
+split()
+
+---------------------
+d={1: 'one', 2: 'two', 3: 'three'}
+
+[(1, 'one'), (2, 'two'), (3, 'three')]
+
+(1, 'one')
+(2, 'two')
+(3, 'three')
+lst2=[]
+for i in lst:
+    for s in i:
+        lst2.append(s)
+-----------------------------
+append never returns any value.
+
+event=sorted(event)===to sort a list.
+-----------------------------------
+str='hello world'
+lst1=list(str)
+    
+lst1
+    
+['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+but to convert like this below
+
+str.split(' ')
+    
+['hello', 'world']
+
+split fn works to convert the string into list.
+--------------------------------
+dict{}
+
+to know the value we have to type lik dict[name].
+----------------------------------------------------------------------------
+
+c=s.pop() #to remove the first object.
+s.clear()
+s.remove()
+s.discard()
+b=set(a) to copy
+set1.union(set2)
+set1^set2==symmentric difference
+set1.issubset(set2)=true or false.
+
+sets cannot be used for getting the key values of dictionary but frozenset can be used.
+
+del dict[]
+
+{}.fromkeys(list,0)
+--------------------------------------------------
+''' doc stringstring '''
+print(x,__doc__)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+day 2
+
+list and tuples =both are collections in python
+mutable and immutable
+uses
+-------
+serialize data if need =lsit
+data is stored orderly in list
+
+pep ==documentation.
+---------
+memory manangement in python.
+namespace??
+environment variable?=python path=used while importing a module..address where your interpreter is installed ,when you run prog ,env variable checks location of interpret nd interpreteer gets to know about the progs.
+
+built in modules ? os built in module,sys ,maths 
+
+can we put all the datatpes like list,tuple,dict  in a empty set
+which are compilers?
+real time applications which is more preferred list or tuple ?
+------------------------------------------------------------------------
+string.join()==this method is applied on the strings list,it will return the elements of the string .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

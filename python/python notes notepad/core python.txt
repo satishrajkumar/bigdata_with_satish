@@ -1,0 +1,187 @@
+matrix method == 2d array into matrix
+m=matrix(array([[]])
+d=diagonal(m)
+c=a.min()
+d=a.max()
+sum=a.sum()
+avg=a.mean()
+s=sort(a)
+t=a.transpose()
+----------------
+2d matrix creation syntax
+array()
+zeros((r,c),int) ones and eye(n,int)
+---------------------------------
+indexing and slicing in 2d arrays.
+------
+1d arrays
+creation
+-------
+array()
+linspace()==a=np.linspace(0,10,5)==evenly spaced
+logspace()==a=logspace(1,3,10)
+arange()==a=arange(2,11,2)
+ones()==a=ones(5,dtype)
+zeros()==a=zeros(5,dtype)
+----------------------
+mathematical fns
+
+power(arr, n) 
+argmax(arr)
+---------------------
+*‘Aliasing’ is not ‘copying b=a where a is an array
+view()==If the newly created array is modified, the original array will also be
+modified since the elements in both the arrays will be like mirror images.
+. The original array and the newly created arrays will share
+different memory locations. 
+
+copy()==When
+the newly created array is modified, it will not affect the existing array or vice versa. 
+--------------------------------- 
+indexing and slicing in 1 d array
+array([ 2,  4,  6,  8, 10])
+a[::2]
+array([ 2,  6, 10])
+------------------------------
+attributes of an array
+a.ndim
+
+a.shape
+The shape is a tuple listing the number of elements along each
+dimension.
+
+
+a.size
+
+a.itemsize==itemsize
+This gives the memory size of the array element in bytes. As we know, 1 byte is equal to 8 bits.
+
+a.nbytes==total memory allocated to an array .
+
+a.dtype
+
+----------------------
+conversions from 1d to 2d
+
+reshape==a=matrix('1 2 3 4 5 6')
+a
+matrix([[1, 2, 3, 4, 5, 6]])
+b=a.reshape(2,3)
+
+flatten() 2d to 1d
+d.flatten()
+array([1, 2, 3, 4, 5, 3, 4, 5])
+d.ndim
+2
+e=d.flatten()
+e.ndim
+1
+-----------------------
+
+
+functions
+-----------
+lambda function==lambda argument_list : expression
+they return a function...
+
+filter()==filter(function, sequence)
+Here, the ‘function’ represents a function name that may return either True or False; and ‘sequence’represents a list, string or tuple.
+
+map()==map(function, sequence)
+The ‘function’ performs a specified operation on all the elements of the sequence.
+
+reduce()==reduce(function, sequence)
+function reduces a sequence of elements to a single value.
+-----------------------------------
+A module is nothing but a Python program that can be
+imported into other programs. Since a module is a Python program, it may contain any stuff like classes,objects, functions, constants etc. 
+This technique makes the project development easy and takes less time to complete the project.
+
+----------------------------------
+decorator()
+A decorator is a function that accepts a function as parameter and returns a function.
+def decor(fun):
+ def inner():
+ value = fun() 
+ return value+2
+return inner==we were returning inner() function using return statement.
+
+result_fun = decor(num)
+print(result_fun())
+So, ‘result_fun’ indicates the resultant function.
+---------------------
+generators.
+Generators are functions that return a sequence of numbers.
+ ‘yield’ statement. This statement is useful to return the value.
+
+-------------
+how to create a module.
+first we have to def the function name and write the return stat.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

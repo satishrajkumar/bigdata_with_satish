@@ -1,0 +1,148 @@
+# addition and subtraction by using function
+def add_sub(a,b):
+    c = a+b
+    d = a-b
+    return c,d
+    
+c1,c2 = add_sub(1,5)
+ 
+print(c1,c2)
+==========================================================================
+def sroot(A):
+    res = A**0.5
+    print('the square root of {} is {}'.format(A,res))
+
+A = int(input('enter a number of find sqare root '))
+sroot(A)
+=============================================================================
+    
+    import math # importing math module
+
+x =int(input('enter a number to find out sqare root: '))
+print("the square root is: ",end="")
+print(int(math.sqrt(x)))
+
+============================================================================
+# IF you don't want to write repeted math module in statments import like this
+
+from math import *
+
+x =int(input('enter a number  '))
+r=sqrt(x)
+y=pow(x,2)
+print('the sqare root of {} is {}.'.format(x,r))
+print(y)
+
+============================================================================
+
+# to find the square of 1 to 10 using function
+
+def square(a):
+    c =a*a
+    print('the square of {} is {}.'.format(a,c))
+
+for i in range(1,11):
+    square(i)
+
+=======================================================================
+
+# find the squar root using return statmenr
+
+def sroot(x):
+       y=x**0.5
+       return y
+y=sroot(100)
+print(y)
+
+
+=======================================================================
+ 
+
+# function to calculate the airhmatic operation
+
+def arith(a,b):
+       r1=a+b
+       r2=a-b
+       r3=a*b
+       r4=a/b
+       return r1,r2,r3,r4
+r1,r2,r3,r4=arith(12,8)
+print('the addition is {}.'.format(r1))
+print('the subtraction is {}.'.format(r2))
+print('the multiplication is {}.'.format(r3))
+print('the division is{}.'.format(r4))
+
+=======================================================================
+
+# to calculacte the monthly salary and annual income
+
+def asal(msal):
+      res=msal*12
+      return res
+
+
+def atax(asal):
+      if asal<=200000: res=0
+      elif asal>=20000: res=0.1*asal
+      elif asal>=50000: res=0.3*asal
+      else: res=0.3*asal
+      return res
+
+msal=float(input('enter monthly salary: '))
+annual_sal=asal(msal)
+
+print('the annual salary: ',annual_sal)
+
+annual_tax=atax(annual_sal)
+print('the annual tax: ',annual_tax)
+
+monthly_tax=annual_tax/12
+print('the monthly_tax is: ',monthly_tax)
+=======================================================================
+
+# we can assign function to a variable
+
+def square(x):
+    res=x*x
+    return res
+x=square(5)
+print(x)
+
+=======================================================================
+# to print the same variable name inside outsite the function variable
+
+x=12
+def display():
+    x=10
+    print(x)
+    y=globals()['x']
+    print(y)
+display()
+print(x)
+
+
+========================================================================
+
+# we can write a function inside a function
+
+def display():
+       def func():
+             return 'krish'
+       return 'hello'+func()
+str =display()
+print(str)
+
+=======================================================================
+
+# we can return a function from another function
+def display():
+    def func():
+          return 'jitendra'
+    return func()
+str=display()
+print(str)
+
+
+
+
+    

@@ -1,0 +1,143 @@
+pandas syntax
+
+C:/Users/admin/Desktop/python/datasets-df-series/empdatas.csv
+
+to retrieve the columns
+========================
+loc() is useful to view rows and cols based on labels (or names). iloc() is useful to view data based on
+integer index.
+
+df.loc[:,'ename']
+df.iloc[:,1]
+df.iloc[:,[1,3]]
+ df.loc[:,['ename','doj']]
+ df.iloc[0:3,[1,3]]
+df.loc[0:3,:]
+df.iloc[0:3,-1]
+---------
+ df.columns
+ df.shape
+ df['ename']
+-----------
+operations
+
+df.sal.max()
+df['sal'].max()
+df.describe()
+df[df.sal>12000]
+df.sal>12000
+0    False
+1     True
+2     True
+3     True
+4     True
+5    False
+>>> df[df.sal>12000][['ename','sal']]
+            ename       sal
+1      Anil Kumar  23000.50
+2    Gaurav Gupta  18000.33
+3    Hema Chandra  16500.50
+4  Laxmi Prasanna  12000.75
+df[df.sal==df.sal.max()] max salary and person name
+---------------------------
+
+index ==set column as index==means no duplicates and empty values9primarykey)
+
+df.set_index('empid',inplace=True)
+df.reset_index('empid',inplace=True)
+df.loc[1004]
+==========================
+missing data
+
+df1=df.fillna(0)
+df1=df.fillna({'ename':'noname','sal':0.00,'doj':'00-00-0000'})
+df1=df.dropna()
+-----------
+sort
+
+df1.sort_values('sal')
+df1.sort_values('sal',ascending=True)
+df=pd.read_excel('C:/Users/admin/Desktop/python/datasets-df-series/empdata.xlsx',parse_dates=['doj'])
+df1.sort_values('doj',ascending=False)
+>>> df1.sort_values(by=['doj','sal'],ascending=(False,True))
+--------
+
+convert df to series.
+--------
+import pandas 
+create df 
+creating series from df
+-----------------
+ser = pd.Series(df['Name'])
+ser
+
+convert series to df
+-------------
+Adding two series and make a dataframe
+>>> df1 = pd.concat([ser, ser1], axis=1) # axis=1 add columns
+>>> df1
+
+Another way to add two series
+>>> mydict = {'empname': ser, 'empage': ser1} # first create dict
+>>> df1 = pd.DataFrame(mydict)
+
+
+Now, if needed change the column names
+=================
+>>> df1.columns = ['empname', 'empage']
+
+Convert series into numpy arrays
+-------------
+>>> a = ser.values
+
+Creating Series from Numpy Array
+=================================
+>>> import numpy as np
+>>> arr = np.array([10, 20, 30, 40])
+>>> ser = pd.Series(arr)
+
+creating series from dict
+----------------
+my_dict = {
+'name' : ["a", "b", "c", "d", "e"],
+'age' : [10,20, 30, 40, 50],
+'designation': ["CEO", "VP", "SVP", "AM", "DEV"]
+}
+ser = pd.Series(my_dict)
+----------------------------
+
+To retrieve all names fromseries.
+----------------------------------
+
+>>> names = ser['name']
+>>> names
+['a', 'b', 'c', 'd', 'e']
+
+To retrieve 0th name
+--------------------------
+>>> names = ser['name'][0]
+>>> names
+'a'
+------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+

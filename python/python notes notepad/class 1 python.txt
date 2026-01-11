@@ -1,0 +1,43 @@
+panda 3.4 version above
+anaconda 3.9 
+python 3.10..
+python.org download.
+pycharm does not have its own python or its just an interface.
+
+path variables =system recognised.
+============================================
+
+install python
+install packages /libraray.
+
+cmd
+pip = pip python installation of packages
+pip install numpy
+pip install pandas
+            xlrd = to read data files
+            matplotlib
+
+these packages  developed by other companies.
+
+pip list to see list of packages installed
+
+pip install numpy=some version for  updating.
+
+=======================================================
+executing python envirom=n.
+integrated development 
+help files API DOCXX 9for professionals)
+===========================================
+integrated development environment.
+
+An integrated development environment (IDE) is software for building applications that combines common developer tools into a single graphical user interface (GUI).
+
+An integrated development environment (IDE) is a software suite that consolidates basic tools required to write and test software.
+=====================================================
+Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic.
+
+Procedural programming is about writing procedures or functions that perform operations on the data, while object-oriented programming is about creating objects that contain both data and functions.
+==========================================================
+
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics
+========================================================

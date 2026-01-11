@@ -1,0 +1,374 @@
+
+c,pascal,fortran,cobol
+procedure orienred prograaming languages.
+
+pblms in
+
+programmers focus is mainly on
+1)how to solve the problem.==print f scan f
+2)reusability is very less==everything code has to be developed from scratch.
+3)suitable for small projects==programmer looses control on the programme due to high lines of code.cannot debug the code easily.
+4)here the programme is artificial.
+
+-----------------------
+oops
+
+focus is on data and data manipulation
+
+programming reflects human life.==develop programmes from  human being's
+life like objects..this is oops.===ex bike part of our life no fear and no tense you can use it easily.
+
+languages like c++,java,python,.NET ==abject oriented progg languages.
+
+resuability os available here===resuing from other class code i can develop my code.
+
+oops is suitable for bigger and complex projects.-==because of writing classes===class contains data and functions.
+-----------------------------------
+
+
+features of oops 
+------------
+object oriented programming system.
+
+it is a special methoadolgy ,using which the progg language is developed .
+
+
+features
+---------
+1classes and objects.
+
+*An object is anything that exists physically in the real world.
+
+your imagination is not an object ,emotions are not object.
+
+behaviour  ---properties and actions 
+angry         red eyes      throw the objects
+
+every bject exibit behaviour which can be understood by its property and actions .
+
+raju =object ===properties (name,age,height,wt) which are represented by variables
+
+actions (talk,walk eat)=====doing calculations ,processing the data 
+
+to represent that action functions are written .
+
+in oops other name of function is methods.
+
+an object contains variables and method .
+
+group of objects having same or coomon  behaviour is called class
+
+a class represents a group or a category of objects exhibiting common behaviou.
+
+
+eg politicians common behaviour like robbing ,looting money...etc
+eg teachers 
+eg soldiers
+eg businessmen
+
+oops features
+-------
+
+a class does not exist physically though they contains variables and methods.
+
+eg persons class (raju,sita,ramu) 
+
+
+object and class 
+------------------------
+mysore paak ==object
+sweets is class ==sugar,atta,ghee...properties
+
+furniture is a class.
+
+flower class.
+
+colour class.
+
+plan is a class ..house is an object
+
+a class is a plan or a model for creating objects.
+
+an object is an instance of (physical form) of the class.
+
+
+an object does not exist without a class .
+
+but a class can exist without any objects.
+
+
+
+class is mainly used to create an object.
+
+
+create class #here the memory is not allocated
+class person:
+
+          #properties=vars
+          #actions=methods
+
+object is created to perform the tasks...and hence the pvm will allocate the memoryblock from the computers ram...
+
+to create an object ...
+x=person()===person class object whose name is x==is a variable that stores the memory address of the object.
+-----------------------------------------------
+__init__==hidden internally created by pvm..
+not available outside ...created inside pvm...
+mrthod overiding...function running automatically by pvm executing
+self default parameter= stores the memory address of the current object.
+-------------------------------------------------------------------------------------------------------------------------------
+variables and methods 
+
+separate copies of instance variables will be created for every object.
+method acting on instance variables is called instance method.
+
+class method
+------------
+class var== it is a var whose single copy is shared by all the objects.
+
+cls is a default parameter that stores the memory address of the class namespace .
+
+instance namespace ==where the objects are created.
+
+class variables are the car whose singlecopy shared by all objs.
+
+any modifications done to class methods ....modies all objects of a class.
+
+objects are independent to each other .
+
+staticmethod
+----------
+it will not effect the objects or the class,when any modications are done .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class 21
+----------
+
+inner class or nested clas
+---------------------------
+class inside another class...
+inner class is written to sub group the data and its functionality
+obj==  outerobj.innerclass()
+   == outerclass().innerclass()
+-----------------------------------------
+features of oops 
+classes and objects
+ 
+encapsulation== 
+bundling up of data and methods
+a class is an example for encapsulation.
+
+encapsulation is a protective mechanism
+
+advantage is possible to use same names can be used for different classes.
+class will protect its own members
+
+
+abstraction
+hiding unnecessory data from the user.
+adv is data security
+no 100%abstraction in python
+
+
+inheritance
+creating new classes from existing classes such that the new class will inherit all the men=mbers of the existing classes.
+
+why all the members of superclass are available to sub class?
+
+when you create an obj to sub class,it contains a copy of superclass.
+
+we can call the all the methods from sub class
+
+advantage of inheritance?
+----------------------------------
+developing the code with less time ...hence productivity of programmer is increased.==3 times more code you can deliver in a given spanm of time 
+
+increase the overall productivity of the company and more profits for company.
+
+--------------------------------------
+class 22
+
+super() should be used in the sub class.
+
+object is the superclass for all classes in python including for our own classes .
+
+java does not support multiple inheritance.
+
+
+-------------------------
+polymorphism
+
+
+@static method
+def add(*x)=variable length argument
+
+cretaing a duplicate method  or same method  in the sub class as==overifi=ding
+
+when to do method overriding 
+when you want whole method along with some addition method then you can refer this method.
+
+javascript object based progg lang
+no inheritance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

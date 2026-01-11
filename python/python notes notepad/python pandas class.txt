@@ -1,0 +1,111 @@
+to retrieve the rows based on query.\
+
+query(string) and retrieve the rows.
+
+how to pick the subset from a df ==slicing 
+
+insert()
+
+assign()
+
+rename
+
+adding colmns
+imserting new rows
+assign()
+lambda
+
+
+
+
+merge()
+join()
+concat() append()==work same syntax different
+
+
+joing the dataframe == joining the tables.
+
+
+=================================
+pandas class3
+
+kaggle.com
+skicit.com
+
+
+select()
+
+df.iloc[5]# numbers it will take
+
+groupby ==split,apply and combine
+
+plsql=joins,storedfns,fns,procedures
+
+==============
+
+sql statements in pandas
+================
+
+window functions
+============
+
+cumulative/expanding window==it will consider the present cell and next cella nd do the sum==cumsum(),cumprod(),cummin(),cummax()
+
+rolling window==it will consider the previous cell adn current cell and do the sum.
+
+=================
+regular fns
+
+filter(),contains(),findall(),replace(),extract(),extractall(),split()
+
+filter()==works on columns
+ 
+reg ex is applied generally on one column 
+
+str()
+contains()
+=================
+time series analysis==every day data is noted ex shares 
+
+date time index
+
+data time indexing.
+
+Window functions are used mainly
+in Time series analysis for finding trends and patterns in the data. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

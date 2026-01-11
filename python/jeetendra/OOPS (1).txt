@@ -1,0 +1,1080 @@
+
+ OOPS:- OBJECT ORIENTED PROGRAMMING SYSTEM
+            :-is computer programing which is return using object and classes
+---------------------------------------------------------------------------------------------------------------------------------
+what is object
+an object is anything that exits physically in the real word
+ans:-pysical existance of a class is nothing but object.we can create any number of objects for a class
+
+---------------------------------------------------------------------------------------------------------------------------------
+pop--program oriented------  
+computer programing which is return using function and procedue
+----------------------------------------------------------------------------------------------------------------------------------
+what is class
+ans:- 1)in python every thing is  an object to create objects we required some model or plan or blue print,
+   which is nothing but class
+2)we can write a class to represented by properties(attributes) and action (behaviour)of object.
+3)properties can represented by variables
+4) action can represented by method
+--------------------------------------------------------------------------------------------------------------------------------
+what is difference between object and class
+ans:-class
+          :-1) class is a collection of data member and member function
+            2)class always declard with keyword class.
+            3) an object can exist without any object
+    object:-
+            1) object is instant of class
+            2)at a time of object we doesn't required any keyword
+            3) an object does not exist without any class
+---------------------------------------------------------------------------------
+what is features of object oriented programing system
+ans:-1)class
+       2)modul
+       3)object
+       4)inheritance
+     5)polymorishim
+     6)data abstraction
+     7)encapsulation
+-------------------------------------------------------------------------------------
+object oriented programing system follow all the features of oops
+ans:-1)simula-67
+        2)c++
+       3)vc++
+       4) java 
+      5)net 
+      6)python
+
+------------------------------------------------------------------------------------
+Within the Python class we can represent data by using variables. 
+There are 3 types of variables are allowed. 
+1. Instance Variables (Object Level Variables)
+2. Static Variables (Class Level Variables)
+3. Local variables (Method Level Variables)
+---------------------------------------------------------------------------------------------------------------
+Within the Python class, we can represent operations by using methods. The following are various 
+types of allowed methods 
+
+
+1. Instance Methods
+2. Class Methods 
+3. Static Methods
+-----------------------------------------------------------------------------------------------------------------
+# how to create a class and how to creat object
+
+class person:
+    # properties  = instance vars
+    def __init__(self):
+        self.name = 'sunil'
+        self.age = 22
+
+    # action = functions or methods
+    def talk(self):
+        print('hello i am ',self.name)
+        print('my age is',self.age)
+
+p1 = person()
+p1.talk()
+
+p2 = person()
+p2.talk()
+-----------------------------------------------------------------------------------------------------------------
+EX.
+class person: this colon is a ending of header part
+def __init__(self)     this underscore is created hidden internally by pvm
+-----------------------------------------------------------------------------------------------------------------------------------------
+what is self
+ans:-it is defined parameter which store memory address of the connect object
+ex. self.name='jitendra'
+        self.age = 33
+-------------------------------------------------------------------------------------------------------------------------
+what is constructor
+ans:-it is a special mehod to create instant variables
+constructer creating object during the process
+----------------------------------------------------------------------------------------------------------------------
+what is self variables
+ans:-self is variable created by pvm to store current object momory address
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+*****what happend  when an object is created
+ans:-
+1) pvm alloctes memory
+2) pvm store object memory address into self
+3)pvm  excute the construct then create a object
+4)pvm returns the memory address of the object
+----------------------------------------------------------------------------------------------------------------------------------------------
+***every program not nun by pvm ,pvm allocate manger for run the program that manger name is main
+---------------------------------------------------------------------------------------------------------------------------------------------------
+*****what is difference between default parameter and parameterzied constructor
+
+ ans:- 1) default parameter or zero parameterzied constructor:
+               1)is  a constructor without any parameter
+               2) default parameter is a useful to initilize all object with same data
+
+         2)parametrized constructor:-
+                1)is a constructor one or more parameter
+                 2)it is useful to initilized every object with different data
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class person:
+    def __init__(self,n,a):
+        self.name = n
+        self.age = a
+
+    def talk(self):
+        print('my name is ',self.name)
+        print('my age is ', self.age)
+
+p1 = person('jitendra',45)
+p1.talk()
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+class student:
+    def __init__(self):
+        self.rno = 345
+        self.name = 'jitendra badwe'
+        self.addr = ' at post nagpur'
+        self.marks = [55, 67, 97, 56, 87]
+
+    def display(self):
+        print('roll no:',self.rno)
+        print('student name : ',self.name)
+        print('student address ',self.addr)
+        print('student marks ',sum(self.marks))
+        print('% of marks ',sum(self.marks)/500*100)
+        
+p1 = student()
+p1.display()
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+class student:
+    def __init__(self):
+        self.rno = 345
+        self.name = 'jitendra badwe'
+        self.addr = ' at post nagpur'
+        self.marks = [55, 67, 97, 56, 87]
+
+    def display(self):
+        print('roll no:', self.rno)
+        print('student name : ', self.name)
+        print('student address ', self.addr)
+
+
+        tot = sum(self.marks)
+        per = tot/len(self.marks)
+        print('total marker',tot)
+        print('percentage:',per)
+        print('percentege {:.3f}'.format(per))
+
+p1 = student()
+p1.display()
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+class student:
+    def __init__(self,rno,name,addr,marks):
+        self.rno= rno
+        self.name= name
+        self.addr = addr
+        self.marks = marks
+
+    def display(self):
+        print('student roll no is',self.rno)
+        print('student name is',self.name)
+        print('student address is',self.addr)
+        print('student marks is',self.marks)
+
+        tot = sum(self.marks)
+        per = tot/len(self.marks)
+        print('total marks',tot)
+        print('percentage',per)
+        print('percentage is {:.2f}'.format(per))
+
+p2 = student(234,'jitendra badwe','nagpur',[87,89,68,56,56])
+p2.display()
+-----------------------------------------------------------------------------------------
+ 
+#Display the manager name,annual salary,income tax and HRA
+'''Note:- If annual salary<=250000 then income tax=0
+       If annual salary>250000 then income tax=10%
+       HRA =15.5% of annual salary
+'''
+
+class manager:
+    def __init__(self,i,n,d,a):
+        self.id = i
+        self.name = n
+        self.deptname = d
+        self.annual_salary = a
+
+    def result(self):
+        if self.annual_salary <= 250000:
+            self.tax=0
+        else:
+            self.tax=0.1*self.annual_salary
+        print('manager name: ',self.name)
+        print('manager annual salary ',self.annual_salary)
+        print('manager income tax: ',self.tax)
+        HRA=0.155*self.annual_salary
+        print('manager HRA : ',HRA)
+
+p1 = manager(101,'jitendra','it',50000000)
+p1.result()
+---------------------------------------------------------------------------------------
+MEHOD IN PYTHON
+
+1) INSTANCE METHOD
+      instance variable are the whose separate copy is available to every object
+
+    
+     A method that acts on instance variable is known as instance method
+
+    self.x or self.variabale exampale of instant variable
+
+how to know the instant variable ?
+ans:- self--> it is given any method then it is instance method
+
+Two types of instant method
+    A) Accessor method/ getter method
+             is a method that reads instance variables it will not modified
+    
+format)  getxxx-->getid(),getname(),getsalary()
+    B) mutator method/setter method:-
+                                                             is a method that not only reads the instance variables but also modify then.
+  format) setid(),setaddress(),setdeptname()
+
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# accessor and mutator method
+class employee:
+    def __init__(self):
+        self.id = 1001
+        self.name = "vinay"
+
+    # accessor methods
+    def getid(self):
+        return self.id
+    def getname(self):
+        return self.name
+
+e1 = employee()
+
+print('id= ',e1.getid())
+print("name ",e1.getname())
+--------------------------------------------------------------------------------------------                          
+# accesssor and mutator method
+
+class employee:
+    # constructor
+    def __init__(self):     #  self is default parameter # construct is constat
+        self.name = 'jitendra'
+ 
+    # accessor method
+    def getname(self):
+        return self.name
+e1 = employee()
+str = e1.getname()
+print(str)
+----------------------------------------------------------------------------------------
+#accessor and mutator method
+class employe:
+    def __init__(self):
+        self.id=1001
+        self.name='Jitendra'
+    #accesssor method
+    def getID(self):
+        return self.id
+    def getName(self): 
+        return self.name
+
+    #mutatator method
+    def setID(self):
+        self.id=1002
+    def setName(self):
+        self.name='Karuna'
+
+e=employe()
+print('Id: ',e.getID())
+print('Name: ',e.getName())
+e.setID()
+e.setName()
+print('Changed Id: ',e.getID())
+print('Changed Name: ',e.getName())
+
+output:=
+Id:  1001
+Name:  jitendra
+Changed Id:  1002
+Changed Name:  Karuna
+---------------------------------------------------------------------------------------------------------------------------------
+CLASS METHOD:- 
+                                 a class variable is variable whose single copy is shared by all the object 
+-->in this variable are directly created 
+-->it use cls ex. def modify(cls):
+A method that acts on class variable is called class method
+
+what is cls
+ans:-cls is default parameter that refers to the class variables memory
+
+-->if we want to class method you have use decorator
+
+@classmethod
+-->it will convert modify method into a class method
+
+--> if you don't write decorator it will consider modify variables a instant variable
+
+---->Inside method implementation if we are using only class variables (static variables), then such type 
+of methods we should declare as class method.
+
+CLS=store memory address
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+# class variables and class methods
+class myclass:
+    x = 10                                 # this is class variableor static variable
+
+    @classmethod
+    def modify(cls):
+        cls.x+=1
+m1=myclass()
+m2=myclass()
+print(m1.x,m2.x)
+
+m1.modify()        #myclass.modify()
+print(m1.x,m2.x)
+
+m1.x+=1
+print(m1.x,m2.x)
+
+output:=
+10 10
+11 11
+12 11
+
+-----------------------------------------------------------------------------------
+class animal:
+    legs =4
+
+    @classmethod
+    def walk(cls,name):
+        print('{}walks with{}legs..'.format(name,cls.legs))
+
+animal.walk('dog')
+animal.walk('cat')
+---------------------------------------------------------------------------------------------------
+# prograqm to track the number of objects created for a class
+class test:
+    count=0
+    def __init__(self):
+        test.count = test.count+1
+    @classmethod
+    def noofobjects(cls):
+         print('the number of object created for the test: ',cls.count)
+
+t1 = test()
+t2 = test()
+test.noofobjects()
+t3 = test()
+t4 = test()
+t5 = test()
+test.noofobjects()
+
+
+
+
+
+=========================================================================================
+STATIC METHOD:-
+ --> it acts on class or static variable
+----> how to call-->obj.method() or class.method()
+----> use decorator @ static method
+
+---->In general these methods are general utility methods.
+-->Inside these methods we won't use any instance or class variables.
+--->Here we won't provide self or cls arguments at the time of declaration.
+
+Q) what is difference between class and static method?
+ans:-->1)any modifiction done in class variable they will affect all the object
+             2) static method any modifiction done in class variables but they will not affect all the object
+-----------------------------------------------------------------------------------------------------------------------
+#To count the no. of objects created for a class
+
+class Myclass:
+    x=0   #this is class or static variable
+    def __init__(self):
+        Myclass.x+=1
+    @staticmethod
+    def display():
+        print('No of objects: ',Myclass.x)
+m1=Myclass()
+m2=Myclass()
+m3=Myclass()
+Myclass.display()    #m1.display() <--In this type also we can call
+
+Output:=
+No of objects:  3
+-----------------------------------------------------------------------------------------------------------------------------------
+#write a static method to find square root values 
+
+class Myclass:
+    @staticmethod
+    def sroot(x):
+        res=x**0.5
+        return res
+y=Myclass.sroot(16)
+print('The square root: ',y)
+
+'''
+or
+m=Myclass()
+res=m.sroot(16)
+print('The square root: ',res)
+--------------------------------------------------------------------------------------------------------
+class math:
+    @staticmethod
+    def add(x,y):
+        print('the sum: ',x+y)
+
+    @staticmethod
+    def product(x,y):
+        print('the product ',x*y)
+
+    @staticmethod
+    def average(x,y):
+        print('the avarge: ',(x+y)/2)
+
+math.add(10,20)
+math.product(10,20)
+math.average(10,20)
+-----------------------------------------------------------------------------------------------
+
+=========================================================================
+INNER CLASS OR NESTED CLASS:-
+                                                                 A class written inside another class
+--> inner class are also called nested class
+-->inner class is written to sub group the data and its functionality
+------------------------------------------------------------------------------------------------------------------------------------
+# inner class demo
+
+class student:
+    def __init__(self):
+        self.rno =100
+        self.name = 'jitendra'
+
+    def display(self):
+        print('rno: ',self.rno)
+        print('name= ',self.name)
+
+    class dob:
+        def __init__(self):
+            self.dd = 14
+            self.mm = 8
+            self.yy = 1997
+        def display(self):
+            print('date of birth={}/{}/{}'.format(self.dd,self.mm,self.yy))
+
+st = student()
+st.display()
+
+d = st.dob()
+d.display()
+
+=========================================================================
+Features of oops
+1) classes and objects
+2)ENCAPSULATION:-
+                                      building up of data and method.
+     --> A class is an example for encapsulation
+     --> Encapsulation is a protective mechnisum
+
+adventages od encapsulation
+-->the adv is that possible to use same name in different classes
+---> every class will protect their own member
+EX.
+id =10
+id=25
+in normal progress are overwrite id
+but used class do not overwrite
+========================================================
+3) Abstraction:-
+                           it is hiding unnecessary data from the user
+ex****abstraction is providing security of data
+-----------------------------------------------------------------------------------------------------
+To provide security.
+use __ two underscore befour the variable 
+ex self.__loan =15000
+
+print(b.loan)--> to get error
+print(b.__loan)--> get error
+if you want the break the abstraction security
+print(b.__loan)---> now show
+-----------------------------------------------------------------------------------------------------
+******name mangling********
+it is  changing the name of variable to break the abstraction is called name mangling
+ex.b.__bank__loan
+------------------------------------------------------------------------------------------------------
+
+
+# abstarction
+
+class bank:
+    def __init__(self):
+        self.accono = 1001
+        self.name = 'jitendra'
+        self.adder = "mh 40  nagpur ,saoner"
+        self.phone = 9876564523
+        self.bal = 5600.00
+        self.loan = 15000000.00
+
+    def display_to_clerk(self):
+        print('accono ',self.accono)
+        print('namr:',self.name)
+        print('address= ',self.adder)
+        print('phone no: ',self.phone)
+        print('balance ammount=rs.%.2f' % self.bal)
+
+e1 = bank()
+e1.display_to_clerk()
+print(e1.loan)
+---------------------------------------------------------------------------------------------------------
+# abstarction
+
+class bank:
+    def __init__(self):
+        self.accono = 1001
+        self.name = 'jitendra'
+        self.adder = "mh 40  nagpur ,saoner"
+        self.phone = 9876564523
+        self.bal = 5600.00
+        self.__loan = 15000000.00
+
+    def display_to_clerk(self):
+        print('accono ',self.accono)
+        print('namr:',self.name)
+        print('address= ',self.adder)
+        print('phone no: ',self.phone)
+        print('balance ammount=rs.%.2f' % self.bal)
+
+e1 = bank()
+e1.display_to_clerk()
+print(e1._bank__loan)        # name mangling syn:  _classname__variablr name
+------------------------------------------------------------------------------------------------------------------------------------------
+4) INHERITANCE:-
+                                creating new class from existing classes such that the new
+class inherits all the member of the existing class
+# teacher
+
+class Teacher:
+    def setid(self,id):
+        self.id =id
+    def getid(self):
+        return self.id
+
+    def setname(self,name):
+        self.name = name
+    def getname(self):
+        return self.name
+
+    def setaddress(self,addr):
+        self.addr = addr
+    def getaddr(self):
+        return self.addr
+
+    def setsal(self,sal):
+        self.sal = sal
+    def getsal(self):
+        return self.sal
+
+s = Teacher()
+s.setid(45)
+s.setname('jitendra')
+s.setaddress('nagour')
+s.setsal(3400)
+
+print(s.getid())
+print(s.getname())
+print(s.getaddr())
+print(s.getsal())
+
+# student
+
+from teacher import *
+class student(Teacher):
+    def setmarks(self,marks):
+        self.marks = marks
+
+    def getmarks(self):
+        return self.marks
+s=student()
+s.setid(45)
+s.setname('jitendra')
+s.setaddress('nagour')
+s.setmarks(45)
+
+print(s.getid())
+print(s.getname())
+print(s.getaddr())
+print(s.getmarks())
+-----------------------------------------------------------------------------------------------------
+class student:
+    def setid(self,id):
+        self.id = id
+    def getid(self):
+        return self.id
+
+    def setname(self,name):
+        self.name =  name
+    def getname(self):
+        return self.name
+
+    def setaddres(self,addr):
+        self.addr = addr
+    def getaddress(self)
+        return self.addr
+
+
+s=student()
+s.setid(45)
+s.setname('jitendra')
+s.setaddr('nagour')
+
+
+print(s.getid())
+print(s.getname())
+print(s.getaddr())
+
+------------------------------------------------------------------------------------------------------
+****why all members of super class are available to subclass in inheritance
+ans:-
+        when are create an object to sub class it contains a copy of super class
+-----------------------------------------------------------------------------------------------------
+******what is the advantages of inheritance?
+ans:- productivity of programer is increased it will increse the overall productivity of the company
+----------------------------------------------------------------------------------------------------
+
+
+class Teacher:
+    def setid(self,id):
+        self.id =id
+    def getid(self):
+        return self.id
+
+    def setname(self,name):
+        self.name = name
+    def getname(self):
+        return self.name
+
+    def setaddress(self,addr):
+        self.addr = addr
+    def getaddr(self):
+        return self.addr
+
+    def setsal(self,sal):
+        self.sal = sal
+    def getsal(self):
+        return self.sal
+
+
+class student(Teacher):
+    def setmarks(self,marks):
+        self.marks = marks
+
+    def getmarks(self):
+        return self.marks
+s=student()
+s.setid(45)
+s.setname('jitendra')
+s.setaddress('nagour')
+s.setmarks(45)
+
+print(s.getid())
+print(s.getname())
+print(s.getaddr())
+print(s.getmarks())
+---------------------------------------------------------------------------------------------------------------------------------------- 
+SUPER CLASS METHOD:-
+                            super()      --  is a function that refers to super class from subclass\
+        super.__init__(args)--->refer to super class constructor
+        super().method(args)---> calls the super class method
+---------------------------------------------------------------------------------------------------------
+TWO TYPE OF INHERITANCE:-
+1)SINGLE INHERITANCE:-deriving sub classes from a single super clases
+2) MULTIPLE INHERITANCE:- deriving subclasses from multiple super classes
+----------------------------------------------------------------------------------------------------
+ *****which is super class for all classes including for own classes***
+ans:-object is the super classes for our own classes
+-------------------------------------------------------------------------------------------------                                                    
+
+# derive rectangular class from square class
+class square:
+    def __init__(self,x):
+        self.x = x
+    def area(self):
+        print('Area of square = ',self.x*self.x)
+
+class rectangle(square):
+    def __init__(self,x,y):
+        super().__init__(x)
+        self.y = y
+    def area(self):
+        print('area of rectangle ',self.x*self.y)
+
+r = rectangle(11,14.45)
+r.area()
+----------------------------------------------------------------------------------------------------------------------
+# derive rectangular class from square class    (part 1 apply super method)
+class square:
+    def __init__(self,x):
+        self.x = x
+    def area(self):
+        print('Area of square = ',self.x*self.x)
+
+class rectangle(square):
+    def __init__(self,x,y):
+        super().__init__(x)
+        self.y = y
+    def area(self):
+        super().area()
+        print('area of rectangle ',self.x*self.y)
+
+r = rectangle(11,14.45)
+r.area()
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+ # multiple inheritance
+
+class father:
+     def height(self):
+         print('height = 6ft')
+class mother:
+    def colour(self):
+        print('colour=tan')
+
+class child(father,mother):
+    pass
+
+ch = child()
+print('child qualities')
+ch.height()
+ch.colour()
+
+--------------------------------------------------------------------------------------------
+5) POLYMORPHISM:-  poly=many,morphos=forms
+if somthing exists in various forms
+if same operator or method performs various task(same variable)
+--------------------------------------------------------------------------------------------------------
+# operator overloading---> same operating performing more then one task
+# method overloading ---> same method performing more then one task
+# method overriding--> creating a dublicate method in nthe sub class
+# duck typing ---> calling a method without knowing its datatype(class).
+-------------------------------------------------------------------------------------------------------
+# operator overloading---> same operating performing more then one task
+
+a = 10
+b = 15.5
+print(a+b)  # addition operation
+
+a ='hydra'
+b = 'bad'
+print(a+b)   #concatenation operator
+-----------------------------------------------------------------------------------------------------------------------------------
+# Demo program to overload + operator for our Book class objects:
+
+class book:
+    def __init__(self,pages):
+        self.pages =pages
+
+    def __add__(self,other):
+        return self.pages+other.pages
+
+b1= book(100)
+b2 =book(200)
+print('the total number of pages:',b1+b2)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+# program to overload multiplication operator to work on employee
+
+class employee:
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+    def __mul__(self,other):
+        return self.salary* other.days
+
+class timesheet:
+     def __init__(self,name,days):
+        self.name = name
+        self.days =days
+
+e=employee('durga',500)
+t=timesheet('durga',25)
+print('this month salary: ',e*t)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# method overloading ---> same method performing more then one task
+class myclass:
+    @staticmethod
+    def add(*x):
+        tot = sum(x)
+        print('sum = ',tot)
+
+myclass.add(10,123)
+myclass.add(23,3245,45)
+myclass.add(23,35,46,67)
+(explaination :- one method working under three method that is called method overloading)
+
+-------------------------------------------------------------------------------------------------------------------------
+
+# method overriding--> creating a dublicate method in nthe sub class
+
+class super:
+    def display(self,x):
+        print('this is a super class method ',x)
+
+class sub(super):
+    def display(self,y):
+        print('square value ',y*y)
+
+s = sub()
+s.display(4)
+s = super()
+s.display(4)
+(expain:- same name use in super class and sub class(display) but body is different(different implementation(print value)
+excute sub class method and never excute main super class that is cllaed overriding then 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# method overloading
+
+class test:
+    def sum(self,a=None,b=None,c=None):
+        if a!=None and b!=None and c!=None:
+            print('the sum of 3 numbers',a+b+c)
+        elif a !=None and b!=None:
+            print('the sum of two numbers',a+b)
+        else:
+            print('please provide a or 3 arguments')
+
+t =test()
+t.sum(10,20)
+t.sum(10,20,30)
+t.sum(10)
+ 
+--------------------------------------------------------------------------------------------------------------------------------
+# duck typing ---> calling a method without knowing its datatype(class).
+
+class duck:
+    def talk(self):
+        print('quack quack')
+class dog:
+    def talk(self):
+        print('bow bow')
+def call_talk(obj):
+    obj.talk()                     # duck typing 
+
+d = duck()
+call_talk(d)
+(explain:-
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------  
+
+
+class square:
+    def __init__(self,x):
+        self.x = x
+    def area(self):
+        print('area of square',self.x*self.x)
+
+
+class rectangle(square):
+    def __init__(self,x,y):
+        super().__init__(x)
+        self.y = y
+    def area(self):
+        
+        print('area of rectangle= ',self.x*self.y)
+
+r = rectangle(10,15)
+r.area()
+
+---------------------------------------------------------------------------------------------------------------------------------------
+ABSTRACT METHOD:-
+                                        abstract method is a method without body
+--->all object exibits same talk for all objects
+--->we write abstract method when every object wants to perform a different task
+---> a class contain abstarct method is called abstract class
+--->abstract class more flexible then normal task
+**--->can not possible to create object for abstact class
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+difference between normal calls and abstrb class
+1) follow by all objects
+2)object want to do another talkk then absract class
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# abstact class demo
+
+from abc import *
+class myclass(ABC):
+    def display(self):
+        print('this is a concrete method')
+
+    @abstractmethod
+    def cal(self,x):
+        pass
+
+class sub1(myclass):
+    def cal(self,x):
+        print('square value ',x*x)
+
+import math
+class sub2(myclass):
+    def cal(self,x):
+        print('square root=',math.sqrt(x))
+
+
+s1 = sub1()
+s1.display()
+s1.cal(16)
+
+s2 = sub2()
+s2.display()
+s2.cal(16)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*******INTERFACE******
+---->an interface is an abstract class with all abtact method only
+---> an interface cannot contain 
+----> no common task
+
+Q) can you create an object for 
+ans--> 
+
+***interface connect any database in the world
+
+Q)what is difference between abstract class and interface
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+# abstact class demo
+
+from abc import *
+class myclass(ABC):
+    def display(self):
+        print('this is a concrete method')
+
+    @abstractmethod
+    def cal(self,x):
+        pass
+
+class sub1(myclass):
+    def cal(self,x):
+        print('square value ',x*x)
+
+import math
+class sub2(myclass):
+    def cal(self,x):
+        print('square root=',math.sqrt(x))
+
+
+s1 = sub1()
+s1.display()
+s1.cal(16)
+
+s2 = sub2()
+s2.display()
+s2.cal(16)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+abstract method:- is a method without body
+concrete method:- is a method with body
+                                                                    all the object excute same behaviour
+object wants to different behaviour
+
+abstract method:= derive the abstract method when every object want to perform different task
+A class that contain abstarct methods is called abstarct class
+
+abstarct class is more useful then 
+abstract method 
+
+ globle function
+
+
+what is difference between abstract class or interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

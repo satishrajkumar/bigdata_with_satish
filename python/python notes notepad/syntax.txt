@@ -1,0 +1,106 @@
+syntax 
+-------------
+inheritance   : class subclass(baseclass):
+
+abstraction  :obj.__classname__var==to access the private variable(__var name) .
+
+inner class :x=outerclass().innerclass()
+
+getter()=def getsal(self):return self.sal
+setter()=def setsal(self):self.sal=sal(value given)
+
+parameterized constructor== def __init__(self,n,m)
+
+super class constructor
+super().__init__()
+super().__init__(arguments)
+super().method().
+
+list comprehension m=[int(m) for m in input('enter the marks=').split(',')]
+--------------------------------------------
+regexp==  methods belonging to the re module are
+======
+□ match() ==1st beginning of the string==retrieve ==group() method.
+
+□ search() method == beginning till the end==group()==1st occurance.
+
+□ findall() method searches the string from beginning till the end and returns all occurrences of the matching string in the form of a list object .
+retrieve==for loop
+
+□ split() method splits the string ===returned as a list.
+
+□ sub() method substitutes (or replaces) == After substitution, the main string is returned by this method.
+-----------
+sequence characters in reg exp
+---------------------------------
+Sequence characters match only one character in the string...
+[\w]* represents 0 or more alphanumeric characters. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+core python syntax
+-------------------
+2d matrix
+----------
+d=diagonal(m)
+a=array([[,],]
+b=a.max()
+b=a.min()
+sum=m.sum()
+avg=m.mean()
+m=sort(a)
+t=a.transpose()
+-----------------------
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,625 @@
+list comprehension
+
+means creating new list from an iterable object.
+
+iterable object =where you can use for loop 
+
+for loop egs strings ,array,list,range...etc
+
+split method belongs to string class.
+
+split method =by default separated by space.
+
+split =/  ,  ' '..etc 
+
+
+linear exeution =pvm
+or 
+sequential execution means executing line by line.
+
+
+random exec=executing randomly and repeatedly.
+
+to develop betetr and complex programs 
+it is possuible only using "control statements".eg for while ..etc
+
+control stats
+
+-------------
+
+if stat
+
+syntax
+
+if cond:
+    stats 1
+    stats 2
+
+indentation =leaivng 4 spaces before a stat is called indentation.
+
+-------------------------
+
+while loop
+
+syn :
+
+while condip
+    stat 1
+    stat 2
+------------------------------------
+
+for loop will not generate the elements ,it will display the elements.
+
+a function contains group of codes internally.
+---------------------------------------------
+
+else suite=else block can be used below for loop or while loop.
+
+break statement is used to come out of the while or for loop.
+
+continues stat=to continue the repetition of the loop.
+if x condition becomes true the subsequent stats not executed.
+
+pass stats=does nothing.or to replace  stats which does nothing.
+
+assert=validate the user input.
+
+syn assert cond is false ,'message' is displayed along with run time error.
+
+assertion error also called exception:represents a classname 
+asssertion error show the rum time error and also the message 
+it will terminate the programme.
+it will not move forward if the entered element is false.
+--------------------------------------------------------
+
+functions
+represents a group of stats that performs a task/action.
+fns uses reusable 
+fnss are mini progs.
+
+def 
+pvm ill not execute a function we have to call a fun.
+function can be called any no of times ...advantage.
+
+def=create
+add=name of fn
+(x,y)=parameters =variables to receive the data.
+(10,20)=arguments are caleld data passed to a function.
+arguments are stored inside parameters.
+
+return stat returns the result from where the function is called and you can later print that result.
+
+class7
+arguments are those =data passed to a function
+parameters =variables to receive the data from outside of a function.
+local variables =variables declared inside the function.,their scope is limited only to that function.
+scope means availability.
+
+
+global variables
+-----------------------
+these are available in the function and out of the func.
+local variables are very powerful locally and dominate on global variables.
+globals()['x'] =this function is used to retrieve the global variables value.
+
+4 types of args 
+
+
+1)positional args :
+
+are the args passed to a function in a correct positional order.
+
+2}keyword args : are the args that identify the parameters by their names.
+
+3) default args=args with default value.
+4)variable length args =are the args that can store 0 or more values.
+adv is it works like multiple funs.
+
+actual args =actual data passed to the formal args.
+formal args=paramters written inside the function.
+
+
+class 8
+
+recursive fn
+-------
+a fun  which calls itself ,it is a method where a fun calls itself.
+where one task is depedent of another task 
+adv is writing less code
+eg: calcuulatin factorial value
+lcm,gcd
+towers of hanoi
+
+
+data structures
+list tuple dict set are egs
+
+stacks ques
+
+---------------
+decorator is a  fn that modifies or decortats another fn
+
+uses
+moodifies the res of another fn 
+modifies the nature or type of another fn
+it will not modify the other fun code ,
+i.e without touching other fun.
+
+structure to be followed 
+
+deco takes a  fun as its parametr
+deco contains another fun inside
+deco returns another func.
+
+generator it is a fun  that generates a sequence of nums 
+it stores the result in an object and returns thaty object.
+
+yield stat =stores the result into an object 
+range eg of predefined generator fun.
+---------------------------------------------
+
+class 9
+
+functions are first class objects.
+means functions are equal to objects.
+functions=object
+           eg;int ,float,str ,list,tuple ,range....are objects
+
+use functions like object.
+x=10
+x=func() assigning fun 
+
+func(10)
+func(fun) passing fun
+
+when you create a function ,internally a object is created.
+
+
+inner func or nested func=writing one fun inside anothe func.
+
+return fun=we can return a fun from another func.
+
+recursive fn.
+--------------------------------
+class 9
+
+
+class 9
+
+module 
+A MODule can be imported and used in another programme.
+
+a module is a python prog thay contains objects ,functions ,class...etc
+
+eg sys module
+
+
+
+module 4 kinds
+
+#import arith
+#import arith as alias
+#from arith import*#from arith import all
+from arith import add,sub
+
+
+
+package is a folders that contains one or more folders.
+
+empty file to be created in my pack
+so that the pack belongs to python package
+__init__.py file created represents a pyhton package is created with .
+
+
+libraries
+------------
+
+a library is a group of packages.
+api helps in giving discriptipn. what is there in what.
+
+how can you use the google library in your peoject.
+
+google/en/sub/py 3.7/new/colours.py/import*
+
+google.en.sub.py 3.7.new.colours.py.import*
+import '' .func()
+
+
+lambda func
+-------------
+it is a function which doesnot have a name or anonymous fun and which does not have a return statement.
+
+lambdas provide compact code or less code.
+--------------------------
+filter()
+it is a func that filters out the elements from a sequence depending on a lambda()
+
+syn :filter(lambda,seq)
+
+map()
+--------
+that works like filter and perhaps modifies the element from a seq based on lambda.
+does the calculation on the elements
+syn:map(lambda,seq)
+
+reduce()
+---------
+this will give a single value dependending on lambda. 
+
+--------------------------------------
+class 11
+
+arrays =represents group of elements of the same data type.
+
+memeory locations are side by side allocated .
+
+diff between list and arrays .
+
+
+*lists can store various type of data type elements where as arrays store same type of elements 
+*lists are slow arays are faster then list.
+because lists store the elements in random locations where as araays side by side memory locations 
+lsits use the memory more efficiently.
+
+
+numpy ===numerical python separate librayry ,it will be added as a separate module in python.
+---------
+to work with arrays .
+
+2 types of arrays 
+
+1 d and arrays==one row one column of elements
+multi dimensional  arrays re[presents more then one row and more then one column of elements,
+
+
+
+
+
+
+
+matplotlib=data visualization.
+threading
+tkinter
+sys 
+numpy =arrays
+pandas==data analysis and report stats.
+
+
+pandas,string,pattern,lists,arrays ....imp 
+
+
+what uis the dataytype of numpy arrays ==ndarray=n dimensuonal array
+
+
+1 d array
+-------
+arrays ()
+
+linspace()==equal cutting of elements and store them in an array
+cuts the dist between two poinr=ts into wy=qual parts and stored into array.
+
+logspace()
+
+same as linspace ==logarthmic scale
+np.arange(10)
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+arange=similar to range==array range===np.arange(10,21,2)
+array([10, 12, 14, 16, 18, 20])
+
+zeros() and ones()===default data type in numpy is float.
+np.zeros(5,int)===default is float.
+array([0, 0, 0, 0, 0])
+
+
+=====================
+
+operations on 1 d arrays 
+--------------
+
+argmin to find position===>>> argmin(arr)
+0
+>> sort(arr)[::-1]====descendinfg order
+array([5, 4, 3, 2, 1])
+
+
+arr=contains memory address
+
+aliasing the array===giving another name for the same array.
+
+>>> arr=array(x)
+>>> arr
+array([200,   2,   3,   4,   5])
+>>> x
+array([200,   2,   3,   4,   5])
+>>> x=arr.view()
+>>> x
+array([200,   2,   3,   4,   5])
+>>> arr
+array([200,   2,   3,   4,   5])
+
+
+shallow copying===x=arr.view()===is a technique where all elements copied ,butany modifications done to an array then chages will take place to all
+shallow copy using view() method.
+deep copy===>>> y=arr.copy()
+>>> y
+array([99,  2,  3,  4,  5])
+>>>same as shallow copy ===but both array behave independently.
+no links or rerlationships existing between them.
+
+
+diff between shallow copy and deep copy ?
+
+------------------
+array ==repetion not possible bcz it is considered as multiplikcation,slicing possible,
+-------------------
+attributes of an array=properties
+
+it loooks like a variable but works like a method.
+arr=array([20,20,-5,15])
+x=array([[1.1,2,3],[4,5,-5.5]])
+x
+array([[ 1.1,  2. ,  3. ],
+       [ 4. ,  5. , -5.5]])
+arr.ndim
+1
+x.ndim
+2
+
+
+ndim==gives dimensionality of an array
+
+-------------------------
+shape=num of rows and columns in an array in the form of a tuple
+
+arr.shape
+(4,)
+x.shape
+(2, 3)
+---------------------------------------
+size==gives the total num of elements in an array.
+
+---------
+itemsize==one elememnt size ===datatype size
+x.itemsize
+8
+arr.itemsize
+4
+---------------
+dtype gives the data type of an array.
+x.dtype
+dtype('float64')==64 bits =8 byte.
+-------------------
+nbytes
+total array size occupied in the memory
+x.nbytes
+48
+arr.nbytes
+16
+---------------------
+reshape()===converts 1d to 2d
+same elements should be their in the newly converted array
+arr=arange(6)
+arr
+array([0, 1, 2, 3, 4, 5])
+arr1=arr.reshape(2,3)
+arr1
+array([[0, 1, 2],
+       [3, 4, 5]])
+
+---------------------
+flatten==converts 2d to 1d
+
+arr1
+array([[0, 1],
+       [2, 3],
+       [4, 5]])
+arr1.flatten()
+array([0, 1, 2, 3, 4, 5])
+--------------------------------------------
+2d arrays
+-------
+eg marks obtained by group of students in 5 subjects.
+
+ccreating 2d array:
+-----------------------
+array function()
+ones()
+zeros()
+eye()
+eye(4,dtype=int)=sqaure type array.
+array([[1, 0, 0, 0],
+       [0, 1, 0, 0],
+       [0, 0, 1, 0],
+       [0, 0, 0, 1]])
+
+------------
+operations 
+
+indexinf=g ,slicing,repetitions all are possible in numpy.
+slicing ==arr[r1:r2,c1:c2]
+
+
+matrices =is a collection of elements arranged in rows and  cols.
+row matrix and col matrix are ex of 1 d array.
+
+a matrix with m rows and n cols=m*n matrix==2d arrays
+
+
+convert an array into matrix..
+
+2 ways of creating a matrix
+matrix(str)==converts string into matrix.
+transpose =convert rows into cols
+
+
+m1.T
+matrix([[ 1, 40, 70],
+        [ 2, 50, 80],
+        [ 3, 60, 90]])
+m1.getT()
+matrix([[ 1, 40, 70],
+        [ 2, 50, 80],
+        [ 3, 60, 90]])
+d=diagonal(m1)
+d
+array([ 1, 50, 90])
+m1.max()
+90
+m1.mean()
+44.0
+m1.mean()
+44.0
+sort(m2)
+matrix([[1, 2, 5],
+        [0, 2, 3],
+        [2, 4, 4]])
+sort(m2,axis=0)
+matrix([[1, 2, 0],
+        [3, 2, 2],
+        [4, 4, 5]])
+
+elements are sorted in the row==row sorting
+column sorted
+
+
+sort(m2,axis=0)
+
+how to provide data from keyboard.
+-----------------------------------------------------
+initially python is develooped  as a scripting language where it is acting as an intermediatory between two technologies for just processing the data taken from sorce and after processing the data is provided to the end user but now the python became /developed as fully fledged programming language as we can give the input data from the keyboard itself and is processed and sent.
+--------------------------------- 
+
+pycharm....
+
+---------
+heavy weight
+user interface
+memory will be occupied and processor will slow down
+world no 1 ide==pycharm ide
+virtual env==block of memory where your python soft and lib and programmes
+is loaded in to memory and ready for execution. 
+
+debugging==remove the eroors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+--------------------------------------
+
+
+
+
+()
+
+
+
+ 
+
+
+
+
+

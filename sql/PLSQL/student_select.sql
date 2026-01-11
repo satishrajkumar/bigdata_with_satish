@@ -1,0 +1,3 @@
+select
+  sname
+  from student ;

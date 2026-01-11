@@ -1,0 +1,99 @@
+TYPES OF ARUMENT:-
+                  argument represent a data send to a function
+
+actual argument:-
+                 the actual data pass to the function
+
+
+various type of argument:-
+1) positional argument:-
+                        they are passed in corret possition as known as positinal argument
+
+ex.def join(s1,s2):
+    str = s1+s2
+    print(str)
+
+join('aurang','bad')
+
+if  input  ouput a show aacourding to input
+2)def join(s1,s2):
+    str = s1+s2
+    print(str)
+
+join('bad','auranga')
+disadvanges:- chage thir position get optput also change 
+=======================================================================
+
+2)keyword arugumet:-
+                     they are passed using parameters as keys
+
+
+
+def join(s1,s2):
+    str = s1+s2
+    print(str)
+
+join(s1='aranga',s2='bad')
+
+    
+def join(s1,s2):
+    str=s1+s2
+    print(str)
+
+join(s2='bad',s1='arungaad')
+
+advandages:- change thir position then get some output
+========================================================================
+
+3) defaults arguments:-
+                      they are perameter with some default values
+
+def grocery(item, price):
+    print('items name= %s '%item)
+    print('price rs = %2f'%price)
+
+grocery('sugar',500)
+-----------------------------------------------------------------
+DEFAULT PRICE
+
+def grocery(item, price=500):
+    print('items name= %s '%item)
+    print('price rs = %2f' %price)
+
+grocery('sugar')
+------------------------------------------------------------
+given default value after also change prive when we will give input price
+
+def grocery(item,price=500):
+    print('items name = ',item)
+    print('price rs= ',price)
+
+grocery('sugar',750)
+
+-----------------------------------------------------------------------
+if default value is alrary given then we can give ony items
+def grocery(item, price=500):
+    print('items name= %s '%item)
+    print('price rs = %2f'%price)
+
+grocery('sugar')
+
+=======================================================================
+variables lenth argument:-
+                          the store more values
+
+def add(m,*x):
+    total =m+sum(x)
+    print(total)
+
+add(100,10)
+add(100,10,11)
+add(100,10,11,12,13,14,15)
+add(100)
+
+=======================================================================
+    
+
+
+
+
